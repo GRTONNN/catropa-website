@@ -1,0 +1,253 @@
+/* Reset default spacing and box model */
+* {
+  margin: 3;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fafafa;
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;   /* center horizontally */
+  padding: 0 20px;  /* spacing on sides */
+}
+
+/* Header & Banner Section */
+header {
+  background: linear-gradient(to bottom, #b8bedd, #f9f7f7);
+  text-align: left;
+  font-size: 6rem;
+  padding: 3rem;
+  border-bottom: 4px solid #a5a9c9;
+}
+
+.header-container h1 {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.header-container .brand {
+  font-size: 3rem; 
+  font-weight: bold;
+  color: #333;
+}
+
+.header-container .tagline {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #666;
+}
+
+/* Headings & Text */
+h1 {
+  font-family: "Poppins", cursive, sans-serif; /* Cute font */
+  font-size: 2.5rem;
+  color: #2c2c2c; /* Dark text for contrast */
+  margin-bottom: 0.5rem;
+}
+
+
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Cute font */
+  font-size: 2rem;                
+  color: #4e3b66;                  /* Deep lavender text for contrast */
+  background-color: #f9f7f7;       /* Light pastel background from gallery */
+  padding: 8px 12px;               /* Space around text */
+  border-left: 4px solid #f28b82;  /* Soft peach accent, matches header */
+  border-radius: 6px;              /* Rounded corners for friendly look */
+  display: inline-block;           /* Wraps background neatly around text */
+  font-weight: 1000;                 /* Slightly bolder than normal */
+}
+
+
+p {
+  font-size: 1rem;
+  font-style: sans-serif;
+  color: #4e4e4e; /* Muted gray */
+  margin-top: 0.5rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #c6e2d8;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;      /* keeps links vertically centered */
+  justify-content: center;  /* centers all links horizontally */
+  gap: 40px;                /* space between links */
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;        /* reduce vertical padding */
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-weight: bold;
+  font-size: 1.4rem;        /* slightly larger so it doesn’t feel tiny */
+  padding: 0.25rem 0.5rem;  /* clickable area without making the bar too tall */
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f28b82;
+}
+
+/* Cat Info Cards */
+.cat-info {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cat-profile,
+.cat-adoption {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.cat-profile h3,
+.cat-adoption h3 {
+  color: #3e1d55;
+  border-bottom: 2px solid #f9c6c9;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.cat-backstory {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  width: 100%;         
+  clear: both;    
+}
+.cat-backstory h3 {
+  color: #3e1d55;
+  border-bottom: 2px solid #f9c6c9;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .cat-info {
+    flex-direction: column;
+  }
+}
+
+/* main sections */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #3e1d55; /* Lavender text */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f9c6c9; /* Pastel pink underline */
+  padding-bottom: 5px;
+}
+
+
+section p,
+section ul {
+  margin-top: 10px;
+}
+
+
+/* CATropa Profile Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+table tr:last-child td {
+  border-bottom: none; /* Remove last row line */
+}
+
+table strong {
+  color: #bd6159; /* Accent peach for labels */
+}
+
+/* Profile photo styling (for cat images in profiles) */
+.profile-photo-right {
+  width: 300px;
+  height: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-left: 20px;   
+  float: right; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+
+/* Listing & Styling */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+
+/* Gallery & Placeholder Section */
+#moments {
+  background-color: #f9f7f7; /* Light pastel background */
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+/* Footer ( Social Media Links) */
+footer {
+  background-color: #b0b7d8; /* Pastel lavender */
+  color: #2c2c2c;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+footer a {
+  color: #6d597a; /* Muted lavender text */
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: #f28b82; /* Soft peach accent */
+  text-decoration: underline;
+}
