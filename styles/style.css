@@ -23,9 +23,9 @@ body {
 header {
   background: linear-gradient(to bottom, #b8bedd, #f9f7f7);
   text-align: left;
-  font-size: 6rem;
-  padding: 3rem;
-  border-bottom: 4px solid #a5a9c9;
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-bottom: 50px solid #a5a9c9;
 }
 
 .header-container h1 {

@@ -1,130 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to CATropa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catropa Website</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
     <!-- Website Header -->
-    <header>
-        <div class="header-container">
-        <span class="brand">CATropa</span>
-        <span class="tagline">because every cat deserves a tropa</span>
-    <p>
+    <header class="header">
+        <div class="header__container">
+        <span class="header__brand">CATropa</span>
+        <span class="header__tagline">because every cat deserves a tropa</span>
+    <p class="header__intro">
       Welcome to CATropa, where every whisker has a story and every pawprint leaves a smile.
       This page is made to celebrate our eight rescued cats, each with their own charm, quirks, and tales worth sharing.
       Through this space, we share their daily adventures, funny habits, and heartwarming moments that brighten our lives.
       You will also find helpful tips on caring for cats, fun trivia, and stories from fellow cat lovers who are part of the growing CATropa community.
       More than a showcase, this page is a reminder that every cat deserves love, care, and a forever tropa.
     </p>
-         <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#cats">Our Cats</a></li>
-      <li><a href="#moments">CATropa Moments</a></li>
-      <li><a href="#tips">Pet Care Tips</a></li>
-      <li><a href="#community">Community & Stories</a></li>
-      <li><a href="#trivia">Did You Know?</a></li>
-      <li><a href="#funfacts">Fun Facts</a></li>
-    </ul>
-  </nav>
-    </header>
-    <hr>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#cats" class="nav__link">Our Cats</a></li>
+        <li class="nav__item"><a href="#moments" class="nav__link">CATropa Moments</a></li>
+        <li class="nav__item"><a href="#tips" class="nav__link">Pet Care Tips</a></li>
+        <li class="nav__item"><a href="#community" class="nav__link">Community & Stories</a></li>
+        <li class="nav__item"><a href="#trivia" class="nav__link">Did You Know?</a></li>
+        <li class="nav__item"><a href="#funfacts" class="nav__link">Fun Facts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <!-- Home Section -->
     <section id="home">
-        <h2>Welcome and Meet Our Feline Stars! 🐾</h2>
-        <p>Eight whiskers, eight heart-melting tales!</p>
-    </section>
-    <hr>
-
+      <div class="home__content">
+      <h1 class="home__title">Welcome to CATropa</h1>
+      <p class="home__subtitle">This page is made to celebrate our eight rescued cats, each with their own charm, quirks, and tales worth sharing.
+      Through this space, we share their daily adventures, funny habits, and heartwarming moments that brighten our lives.
+      You will also find helpful tips on caring for cats, fun trivia, and stories from fellow cat lovers who are part of the growing CATropa community.
+      More than a showcase, this page is a reminder that every cat deserves love, care, and a forever home.</p>
+      <p> Meet the fabulous feline stars of the CATropa Crew, eight whiskered wonders with heart-melting tales, quirky charms, and unforgettable personalities.
+        From heroic rescues to hilarious habits, each cat brings their own sparkle to the crew.
+        Say meow and get to know the fluff-tastic lineup that makes CATropa a whisker-filled wonderland!
+    </div>
+  </p>  
+</section>
+  
     <!-- Cat Bios -->
-    <section id="cats">
-      <h2>Our Cats</h2>
-<ol>
-<li class="juliet-card">
-  <strong>Juliet - The Queen</strong><br>
-  <img src="images/Profile Photos/Juliet Profile.jpeg" 
-       alt="juliet-card" width="300" class="profile-photo">
-    
-    <div class="cat-info">
-      <div class="cat-profile">
-        <h3>Profile</h3>
+    <main class ="catropa__crew">
+      <ol class="cat__list">
+
+        <!-- Juliet -->
+        <li class="cat-card__juliet">
+          <strong class="cat-card__name">Juliet - The Queen</strong><br>
+          <img 
+             src="images/Profile Photos/Juliet Profile.jpeg" 
+             alt="juliet-card" 
+             width="300" 
+             class="profile-photo"> 
+
+      <!-- Profile Section -->       
+      <div class="cat-card__info">
+      <div class="cat-card__profile">
+        <h3 class="cat-card_subtitle">Profile</h3>
         <p>
           <strong>Official Name:</strong> Juliet<br>
           <strong>Nickname(s):</strong> Bebi<br>
           <strong>Breed or Mix:</strong> Persian<br>
-          <strong>Age/Birthday Guess:</strong> 12 Years Old - May 21, 2014<br>
+          <strong>Birthday Guess:</strong> May 21, 2014<br>
+          <strong>Age:</strong> 12 years old<br>
           <strong>Eye Color:</strong> Green<br>
-          <strong>Pattern & Fur Color:</strong> Solid Light gray and white<br>
+          <strong>Fur Color:</strong> Gray and White<br>
+          <strong>Pattern:</strong> Solid Light
         </p>
-      </div>
-
-      <div class="cat-adoption">
-        <h3>Adoption/Rescue Tale</h3>
-        <p>
-          <strong>Date:</strong> May 22, 2014 <br>
-          <strong>Rescue Location:</strong> Adopted from an officemate<br>
-        </p>
-      </div>
     </div>
 
-    <div class="cat-backstory">
-      <h3>Backstory/Journey</h3>
-      <p><em>The Queen’s Second Chance</em></p>
-      <p>
-    Once upon a whisker, in a world steeped in the aroma of karak tea, sweet treats, 
-    and the warm bustle of Arab hospitality, there lived a regal Persian beauty named Juliet. 
-    To those closest to her, she was simply Bebi. With her silken coat of light gray and white, 
-    and eyes as green and mesmerizing as an oasis at dusk, Bebi reigned supreme, not over palaces 
-    or gardens, but over the villa kingdom, where she was the undisputed queen.
-  </p>
-
-  <p>
-    But Juliet wasn’t just a pretty face. She had a love story worthy of Shakespeare. 
-    Her partner? A dashing feline named Romeo. Together, they shared cozy naps, 
-    synchronized tail flicks, and even raised a litter of adorable kittens. Life was purrfect.
-  </p>
-
-  <p>
-    Then came a twist in the tale. Juliet’s human, her original Furr Parent, received surprising news: 
-    a baby on the way, and the doctor’s orders to avoid cats. It was a heartbreaking moment. 
-    But instead of turning their backs on Juliet, her humans did something beautiful; 
-    they chose love over abandonment. They offered her up for adoption, hoping someone would 
-    see the magic in her.
-  </p>
-
-  <p>
-    And that’s when fate stepped in.
-  </p>
-  <p>
-    On May 21, 2014, Juliet found her new chapter with a kind-hearted officemate (that’s us!). 
-    From the moment she stepped into her new home, she brought elegance, sass, and a whole lot of cuddles. 
-    Her journey to become a beloved family member is a reminder that every cat deserves a second chance 
-    and a soft place to land.
-  </p>
+      <!-- Adoption Section -->
+      <div class="cat-profile__section cat-profile__section--adoption">
+        <h5 class="cat-profile__subtitle">Adoption / Rescue Tale</h5>
+          <table class="cat-profile__table">
+            <tr><td><strong>Date:</strong></td><td>May 22, 2014</td></tr>
+            <tr><td><strong>Location:</strong></td><td>Adopted from an officemate</td></tr>
+  </table>
+      <div class="cat-profile__backstory">
+        <p><strong>The Queen’s Second Chance.</strong></p>
+        <p>Once upon a whisker, in a world steeped in the aroma of karak tea, sweet treats, and the warm bustle of Arab hospitality, there lived a regal Persian beauty named Juliet. To those closest to her, she was simply Bebi. With her silken coat of light gray and white, and eyes as green and mesmerizing as an oasis at dusk, Bebi reigned supreme, not over palaces or gardens, but over the villa kingdom, where she was the undisputed queen.</p>
+        <p>But Juliet wasn’t just a pretty face. She had a love story worthy of Shakespeare. Her partner? A dashing feline named Romeo. Together, they shared cozy naps, synchronized tail flicks, and even raised a litter of adorable kittens. Life was purrfect.</p>
+        <p>Then came a twist in the tale. Juliet’s human, her original Furr Parent, received surprising news: a baby on the way, and the doctor’s orders to avoid cats. It was a heartbreaking moment. But instead of turning their backs on Juliet, her humans did something beautiful; they chose love over abandonment. They offered her up for adoption, hoping someone would see the magic in her.</p>
+        <p>And that’s when fate stepped in.</p>
+        <p>On <b>May 21, 2014.</b> Juliet found her new chapter with a kind-hearted officemate (that’s us!). From the moment she stepped into her new home, she brought elegance, sass, and a whole lot of cuddles. Her journey to become a beloved family member is a reminder that every cat deserves a second chance and a soft place to land.</p>
+  </div>
 </div>
-</li>
-        <li class="milkee-card">
-            <strong>Milkee</strong><br>
-            <img src="images/Profile Photos/MikMik Profile.jpeg" alt="Milkee Cat" width="300">
 
-  <div class="cat-info">
-    <div class="cat-profile">
-      <h3>Profile</h3>
-      <p>
-        <strong>Official Name:</strong> CAT NAME<br>
-        <strong>Nickname(s):</strong> (Fill in)<br>
-        <strong>Breed or Mix:</strong> (Fill in)<br>
-        <strong>Age/Birthday Guess:</strong> (Fill in)<br>
-        <strong>Eye Color:</strong> (Fill in)<br>
-        <strong>Pattern & Fur Color:</strong> (Fill in)<br>
+      <!-- Glow Up Section -->
+    <div class="cat-profile__section cat-profile__section--glowup">
+      <h5 class="cat-profile__subtitle">Before the Purr</h5>
+        <div class="cat-profile__glow-set">
+        <img src="catropa_image/glow_up/before/b_julietp1.jpeg" alt="Before photo of Juliet" class="cat-profile__glow-photo">
+        <img src="catropa_image/glow_up/before/b_julietp2.jpeg" alt="Before photo of Juliet" class="cat-profile__glow-photo">
+        <img src="catropa_image/glow_up/before/b_julietp3.jpeg" alt="Before photo of Juliet" class="cat-profile__glow-photo">
+        <p class="cat-profile__caption">Not broken, just paused, waiting for the right heart to notice</p>
+  </div>
+</div>
+
+      <!-- Personality Section -->
+      <div class="cat-profile__section cat-profile__section--personality">
+        <h5 class="cat-profile__subtitle">Personality & Purr-sonal Life</h5>
+        <div class="cat-profile__details">
+        <p><strong>Personality Vibes:</strong> Juliet is the embodiment of feline elegance with a dash of diva flair...</p>
+        <p><strong>Quirks & Habits:</strong> She’s always leaping with confidence... only the finest water will do!</p>
+        <p><strong>Favorite Activities:</strong> Sleeping in different dramatic poses.</p>
+        <p><strong>Best Friend(s):</strong> Her forever love, Romeo, remains her soulmate and Mikmik.</p>
+    </div>
+  </div>
+</section>
+
+      <!-- Winter Milkee -->
+      <li class="cat-card__milkee">
+        <strong class="cat-card__name">Winter Milkee</strong><br>
+        <img 
+         src="images/Profile Photos/MikMik Profile.jpeg" 
+         alt="Milkee Cat" 
+         width="300">
+      
+      <!-- Profile Section -->
+      <div class="cat-card__info">
+      <div class="cat-card__profile">
+        <h3 class="cat-card__subtitle">Profile</h3>
+        <p>
+        <strong>Official Name:</strong> Winter Milkee<br>
+        <strong>Nickname(s):</strong> MikMik, Mikyaw<br>
+        <strong>Breed or Mix:</strong> Persian<br>
+        <strong>Birthday Guess:</strong> June 7, 2016<br>
+        <strong>Age:</strong> 9 years old<br>
+        <strong>Eye Color:</strong> Yellow Green<br>
+        <strong>Fur Color:</strong> Black, Gray, and White<br>
+        <strong>Pattern:</strong> Solid
       </p>
     </div>
-
+      
+      <!-- Adoption Section -->
     <div class="cat-adoption">
       <h3>Adoption/Rescue Tale</h3>
       <p>
