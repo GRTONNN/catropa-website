@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fafafa;
@@ -15,8 +15,8 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;   /* center horizontally */
-  padding: 0 20px;  /* spacing on sides */
+  margin: 0 auto; 
+  padding: 0 20px;
 }
 
 /* Header & Banner Section */
@@ -28,19 +28,19 @@ header {
   border-bottom: 50px solid #a5a9c9;
 }
 
-.header-container h1 {
+.header__container h1 {
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
 
-.header-container .brand {
+.header__brand {
   font-size: 3rem; 
   font-weight: bold;
   color: #333;
 }
 
-.header-container .tagline {
+.header__tagline {
   font-size: 1.2rem;
   font-weight: normal;
   color: #666;
@@ -48,30 +48,28 @@ header {
 
 /* Headings & Text */
 h1 {
-  font-family: "Poppins", cursive, sans-serif; /* Cute font */
+  font-family: "Poppins", cursive, sans-serif;
   font-size: 2.5rem;
-  color: #2c2c2c; /* Dark text for contrast */
+  color: #2c2c2c;
   margin-bottom: 0.5rem;
 }
 
 
 h2 {
-  font-family: "Comic Sans MS", cursive, sans-serif; /* Cute font */
+  font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 2rem;                
-  color: #4e3b66;                  /* Deep lavender text for contrast */
-  background-color: #f9f7f7;       /* Light pastel background from gallery */
-  padding: 8px 12px;               /* Space around text */
-  border-left: 4px solid #f28b82;  /* Soft peach accent, matches header */
-  border-radius: 6px;              /* Rounded corners for friendly look */
-  display: inline-block;           /* Wraps background neatly around text */
-  font-weight: 1000;                 /* Slightly bolder than normal */
+  color: #4e3b66;                 
+  background-color: #f9f7f7;
+  padding: 8px 12px;               
+  border-left: 4px solid #f28b82;  
+  border-radius: 6px;              
+  display: inline-block;           
+  font-weight: 1000;                 
 }
-
 
 p {
   font-size: 1rem;
-  font-style: sans-serif;
-  color: #4e4e4e; /* Muted gray */
+  color: #4e4e4e;
   margin-top: 0.5rem;
 }
 
@@ -82,12 +80,12 @@ nav {
 
 nav ul {
   display: flex;
-  align-items: center;      /* keeps links vertically centered */
-  justify-content: center;  /* centers all links horizontally */
-  gap: 40px;                /* space between links */
+  align-items: center;  
+  justify-content: center;
+  gap: 40px;
   list-style: none;
   margin: 0;
-  padding: 0.5rem 0;        /* reduce vertical padding */
+  padding: 0.5rem 0;
 }
 
 nav li {
@@ -98,8 +96,8 @@ nav a {
   text-decoration: none;
   color: #2c2c2c;
   font-weight: bold;
-  font-size: 1.4rem;        /* slightly larger so it doesn’t feel tiny */
-  padding: 0.25rem 0.5rem;  /* clickable area without making the bar too tall */
+  font-size: 1.4rem;
+  padding: 0.25rem 0.5rem;
   transition: color 0.3s;
 }
 
@@ -107,7 +105,7 @@ nav a:hover {
   color: #f28b82;
 }
 
-/* Cat Info Cards */
+/* Cat Info */
 .cat-info {
   display: flex;
   gap: 20px;
@@ -115,22 +113,19 @@ nav a:hover {
   margin-top: 10px;
 }
 
-.cat-profile,
-.cat-adoption {
-  flex: 1;
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+.cat.profile__subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #4e3b66;
+  margin: 20px 0 10px 0;
+  padding: 8px 12px;
+  background-color: #f9f7f7;
+  border-left: 4px solid #f28b82;
+  border-radius: 6px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
-.cat-profile h3,
-.cat-adoption h3 {
-  color: #3e1d55;
-  border-bottom: 2px solid #f9c6c9;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
 .cat-backstory {
   text-align: center;
   margin-top: 20px;
@@ -138,8 +133,7 @@ nav a:hover {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-  width: 100%;         
-  clear: both;    
+
 }
 .cat-backstory h3 {
   color: #3e1d55;
@@ -147,13 +141,6 @@ nav a:hover {
   display: inline-block;
   margin-bottom: 10px;
   padding-bottom: 5px;
-}
-
-/* Responsive layout */
-@media (max-width: 768px) {
-  .cat-info {
-    flex-direction: column;
-  }
 }
 
 /* main sections */
@@ -166,9 +153,9 @@ section {
 }
 
 section h2 {
-  color: #3e1d55; /* Lavender text */
+  color: #3e1d55;
   margin-bottom: 10px;
-  border-bottom: 2px solid #f9c6c9; /* Pastel pink underline */
+  border-bottom: 2px solid #f9c6c9;
   padding-bottom: 5px;
 }
 
@@ -196,14 +183,14 @@ table td {
 }
 
 table tr:last-child td {
-  border-bottom: none; /* Remove last row line */
+  border-bottom: none;
 }
 
 table strong {
-  color: #bd6159; /* Accent peach for labels */
+  color: #bd6159;
 }
 
-/* Profile photo styling (for cat images in profiles) */
+/* Profile photo */
 .profile-photo-right {
   width: 300px;
   height: 400px;
@@ -214,6 +201,13 @@ table strong {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
+/* Moments Section */
+.moments {
+  background-color: #f9f7f7;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
 
 /* Listing & Styling */
 ul {
@@ -224,13 +218,23 @@ ul li {
   margin: 5px 0;
 }
 
-
 /* Gallery & Placeholder Section */
 #moments {
   background-color: #f9f7f7; /* Light pastel background */
   padding: 15px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
+}
+
+/* Glow Up Section Titles (Before / After) */
+.cat-profile__glow-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 /* Footer ( Social Media Links) */
@@ -250,4 +254,11 @@ footer a {
 footer a:hover {
   color: #f28b82; /* Soft peach accent */
   text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .cat-info {
+    flex-direction: column;
+  }
 }
