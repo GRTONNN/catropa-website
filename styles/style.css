@@ -1,10 +1,6 @@
 /* MO-IT161 - Web Systems and Technology */
-/* Anton Roger Galfo || Marjorie Navarro
+/* Anton Roger Galfo || Marjorie Navarro */
 
-
-
-
-/*CAtropa Webpage CSS File*/
 * {
   margin: 10;
   padding: 0;
@@ -18,6 +14,76 @@ body {
   line-height: 1.8;
   background-color: #f7f2e4;
   color: #3e2723;
+}
+
+
+/* HOME SECTION */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #fdf6f0, #ffe4d9);
+  min-height: 90vh; /* full hero feel */
+}
+
+.home__content {
+  max-width: 50%;
+}
+
+.home__title {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: #3e2723;
+  margin-bottom: 20px;
+}
+
+.home__title span {
+  color: #973719;
+}
+
+.home__subtitle {
+  font-size: 1.5rem;
+  color: #5d4037;
+  margin-bottom: 15px;
+}
+
+.home__description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #4e342e;
+}
+
+.home__button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #225e5f;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease, transform 0.2s ease;
+}
+
+.home__button:hover {
+  background-color: #7c2a14;
+  transform: scale(1.05);
+}
+
+.home__image img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Cute floating animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 
@@ -47,13 +113,11 @@ header p {
 }
 
 
-
-
 /* HEADINGS */
 h2 {
   font-size: 2rem;  
   font-family: "handwriting";
-  color: #fefef1;          
+  color: #7c2a14;          
   font-weight: 1000;                
   margin: 0.5rem 0 0;  
   display: inline-block;
@@ -78,110 +142,168 @@ h4 {
 }
 
 
-h5 {
-  font-size: 1.5rem;
-  font-family: "handwriting";
-  color: #3e2723;
-  margin-bottom: 0%;
-  margin-top: 1px;
-}
-
-
-h6 {
-  font-size: 1.5rem;
-  font-family: "handwriting";
-  color: #4db6ac;
-  margin: 10px 0 0;
-}
-
-
-/*    NAVIGATION BAR */
+/* NAVIGATION BAR */
 nav {
-  background-color: #23887e;
-  padding: 1.0rem;
+  background-color: #07535e;
+  padding: 0.5rem 2rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;       
 }
 
+.navbar {
+  trasition: opacity 0.5s ease, visibility 0.5 ease;
+}
 
+.navbar.hidden {
+  opacity: 0;
+  visibility: hidden;
 
+}
 
+/* Logo */
+nav .logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* Nav links */
 nav ul {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;    
+  gap: 2rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-
-nav li {
-  margin: 0 15px;
+nav ul li {
+  margin: 0;
 }
 
-
-nav a {
+nav ul a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   color: #fefef1;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
+/* Hover underline effect */
+nav ul a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #f28b82;
+  transition: width 0.3s ease;
+}
 
-nav a:hover {
+nav ul a:hover::after {
+  width: 100%;
+}
+
+nav ul a:hover {
   color: #f28b82;
 }
 
 
-
-
 /* MAIN CONTENT*/
-main {
-  padding: 10px;
+.cat-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: linear-gradient(to right, #e3f2f1, #fefefe);
+  min-height: 80vh;
 }
 
+.cat-info {
+  flex: 1;
+  padding: 20px;
+}
 
-section {
+.cat-name {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cat-tagline {
+  font-style: italic;
   margin-bottom: 20px;
+  color: #666;
+}
+
+.cat-details p {
+  margin: 6px 0;
+}
+
+.view-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #225e5f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+  border: none;          /* prevent border styles */
+  outline: none;         /* remove focus outline */
+  box-shadow: none;      /* remove any shadow */
 }
 
 
-section p,
-section ul {
-  margin-top: 10px;
+.view-more:hover {
+  background-color: #973719; /* darker shade on hover */
+  transform: scale(1.05);
 }
 
-
-/*PROFILE TABLE*/
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0;
-  background-color: #ffffff;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-  font-size: 1.1rem;
-  font-family: "Roboto", sans-serif;
+.cat-image {
+  flex: 1;
+  text-align: center;
 }
 
-
-
-
-table td {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
+.cat-image img {
+  max-width: 400px;
+  border-radius: 16px;
+  transition: transform 0.3s ease-in-out;
 }
 
-
-table tr:last-child td {
-  border-bottom: none;
+.cat-image img:hover {
+  transform: scale(1.05);
 }
 
-
-table strong {
-  color: #973719;
+/* Hidden story until clicked */
+.cat-story {
+  display: none;
+  padding: 40px;
+  background: #fafafa;
+  border-top: 2px solid #ddd;
 }
+
+.cat-story h3, .cat-story h4 {
+  margin-top: 20px;
+}
+
+.glow-up img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 
 
 /*PROFILE PHOTO*/

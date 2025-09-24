@@ -1,9 +1,5 @@
 <!-- MO-IT161 - Web Systems and Technology -->
 <!-- Anton Roger Galfo || Marjorie Navarro -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,211 +10,182 @@
 </head>
 <body>
 
-
-  <!-- Header / Banner -->
-  <header>
-    <h2>Where every cat deserves a</h2>
-    <h1>CATropa</h1>
- 
-  </header>
-
-
   <!-- Navigation Bar -->
-  <nav>
-    <ul>
+  <nav class="navbar">
+  <!-- Logo -->
+    <div class="logo">
+      <img src="images/Logo_transparent-removebg-preview.png" alt="CATropa Logo">
+    </div>
+
+  <!-- Nav Links -->
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#cats">Catropa Crew</a></li>
       <li><a href="#moments">Moments & Whiskers</a></li>
       <li><a href="#tips">Pet Care Tips</a></li>
       <li><a href="#community">Community & Stories</a></li>
       <li><a href="#trivia">Did You Know?</a></li>
-      <li><a href="#funfacts">Fun Facts</a></li>
-    </ul>
+      </ul>
+    </div>
   </nav>
-
 
   <!-- Main Content -->
   <main>
 
-
     <!-- Home / Welcome -->
-    <section id="home">
-      <p><strong>Welcome to CATropa!</strong></p>
-      This page is made to celebrate our eight rescued cats, each with their own charm, quirks, and tales worth sharing.
-      Through this space, we share their daily adventures, funny habits, and heartwarming moments that brighten our lives.
-      You will also find helpful tips on caring for cats, fun trivia, and stories from fellow cat lovers who are part of the growing CATropa community.
-      More than a showcase, this page is a reminder that every cat deserves love, care, and a forever home.</p>
-      <p> Meet the fabulous feline stars of the CATropa Crew, eight whiskered wonders with heart-melting tales, quirky charms, and unforgettable personalities.
-        From heroic rescues to hilarious habits, each cat brings their own sparkle to the crew.
-        Say meow and get to know the fluff-tastic lineup that makes CATropa a whisker-filled wonderland!
-      </p>  
-    </section>
+<section id="home" class="home">
+  <div class="home__content">
+    <h1 class="home__title">Welcome to <span>CATropa!</span></h1>
+    <p class="home__subtitle">
+      A celebration of our eight rescued cats — each with their own charm, quirks, and heart-melting tales.
+    </p>
+    <p class="home__description">
+      From hilarious habits to heroic rescues, you’ll meet the fabulous feline stars of CATropa Crew —
+      whiskered wonders with unforgettable personalities. This isn’t just a showcase, it’s a reminder:
+      every cat deserves love, care, and a forever home. 🐾
+    </p>
+    <a href="#cats" class="home__button">Meet the Crew</a>
+  </div>
+  <div class="home__image">
+    <img src="images/moments/pjuliet.jpg" alt="Cute cat illustration">
+  </div>
+</section>
 
 
  <!-- Cat Bios/Profile -->
   <section id="cats" class="profile">
    
- <!-- 1. Juliet -->
-<section id="juliet">
-  <h4 class="profile-name">🐾Juliet</h4>
+ <!-- Juliet Showcase -->
+<section class="cat-showcase" id="juliet">
+  <div class="cat-info">
+    <h2 class="cat-name">🐾 Juliet</h2>
+    <p class="cat-tagline">The Queen’s Second Chance</p>
 
+    <div class="cat-details">
+      <p><strong>Nickname(s):</strong> Bebi, Julieta Magalpok</p>
+      <p><strong>Breed:</strong> Persian</p>
+      <p><strong>Birthday:</strong> May 21, 2014</p>
+      <p><strong>Age:</strong> 12 years old</p>
+      <p><strong>Eye Color:</strong> Green</p>
+      <p><strong>Fur Color:</strong> Solid Light Gray & White</p>
+      <p><strong>Pattern:</strong> Bi-color</p>
+      <p><strong>Weight:</strong> 2.5–3 kg</p>
+    </div>
 
-  <div class="cat-profile-info">
-    <h5 class="profile-section-title">Profile:</h5>
-    <table>
-      <tr>
-      <td><strong>Nickname(s):</strong></td><td>Bebi, Julieta Magalpok</td>
-      <td rowspan="9">
-        <img src="catropa_image/Profile/julietp1.jpeg" alt="Juliet" class="profile-photo-right">
-      </td>
-      </tr>
-      <tr><td><strong>Breed(s):</strong></td><td>Persian</td></tr>
-      <tr><td><strong>Birthday:</strong></td><td>May 21, 2014</td></tr>
-      <tr><td><strong>Age:</strong></td><td>12 years old</td></tr>
-      <tr><td><strong>Eye Color:</strong></td><td>Green</td></tr>
-      <tr><td><strong>Fur Color:</strong></td><td>Solid Light Gray and White</td></tr>
-      <tr><td><strong>Pattern:</strong></td><td>Bi-color</td></tr>
-      <tr><td><strong>Weight:</strong></td><td>2.5–3 kg</td></tr>
-    </table>
+    <button class="view-more">View Full Story</button>
   </div>
 
+<div class="cat-image">
+    <img src="images/Profile Photos/Juliet Profile.jpeg" alt="Juliet the Cat">
+  </div>
+</section>
+
+<!-- Juliet's Full Story (hidden until "View More") -->
+<div class="cat-story" id="juliet-story">
+  <h3>Adoption / Rescue Tale</h3>
+  <p>
+    Once upon a whisker, in a world steeped in the aroma of karak tea, sweet treats, and the warm bustle of Arab hospitality, there lived a regal Persian beauty named Juliet.
+    To those closest to her, she was simply Bebi. With her silken coat of light gray and white, and eyes as green and mesmerizing as an oasis at dusk,
+    Bebi reigned supreme, not over palaces or gardens, but over the villa kingdom, where she was the undisputed queen.</p>
 
 
-
-  <h5 class="profile-section-title">Adoption / Rescue Tale:</h5>
-  <p><strong>The Queen’s Second Chance.</strong></p>
- 
-  <p>Once upon a whisker, in a world steeped in the aroma of karak tea, sweet treats, and the warm bustle of Arab hospitality, there lived a regal Persian beauty named Juliet.
-  To those closest to her, she was simply Bebi. With her silken coat of light gray and white, and eyes as green and mesmerizing as an oasis at dusk,
-  Bebi reigned supreme, not over palaces or gardens, but over the villa kingdom, where she was the undisputed queen.</p>
+    <p>But Juliet wasn’t only a pretty face. She had a love story worthy of Shakespeare. Her partner? A dashing feline named Romeo.
+    Together, they shared cozy naps, synchronized tail flicks, and even raised a litter of adorable kittens. Life was purrfect.</p>
 
 
-  <p>But Juliet wasn’t only a pretty face. She had a love story worthy of Shakespeare. Her partner? A dashing feline named Romeo.
-  Together, they shared cozy naps, synchronized tail flicks, and even raised a litter of adorable kittens. Life was purrfect.</p>
-
-
-  <p>Then came a twist. Juliet’s human, her original Furr Parent, received surprising news: a baby on the way, and the doctor’s orders to avoid cats. It was a heartbreaking moment.
-   But instead of turning their backs on Juliet, her humans did something beautiful, they chose love over abandonment.
-   They offered her up for adoption, hoping someone would see the magic in her.</p>
+    <p>Then came a twist. Juliet’s human, her original Furr Parent, received surprising news: a baby on the way, and the doctor’s orders to avoid cats. It was a heartbreaking moment.
+    But instead of turning their backs on Juliet, her humans did something beautiful, they chose love over abandonment.
+    They offered her up for adoption, hoping someone would see the magic in her.</p>
            
-  <p>And that’s when fate stepped in.</p>
-  <p>On May 21, 2014, Juliet found her new chapter with a kind-hearted officemate (that’s us!).
-  From the moment she stepped into her new home, she brought elegance, sass, and a whole lot of cuddles.
-  Her journey to become a beloved family member is a reminder that every cat deserves a second chance and a soft place to land.</p>
+    <p>And that’s when fate stepped in.</p>
+    <p>On May 21, 2014, Juliet found her new chapter with a kind-hearted officemate (that’s us!).
+    From the moment she stepped into her new home, she brought elegance, sass, and a whole lot of cuddles.
+    Her journey to become a beloved family member is a reminder that every cat deserves a second chance and a soft place to land.</p>
        
-
-
-  <h5 class="profile-section-before">Paws for Hope</h5>
-  <div id="glow-up">
-    <img src="catropa_image/glow_up/before/b_juliet1.jpg" alt="Before Juliet">
-    <img src="catropa_image/glow_up/before/b_juliet2.jpg" alt="Before Juliet">
-    <img src="catropa_image/glow_up/before/b_juliet3.jpg" alt="Before Juliet">
+  <h4>Paws for Hope</h4>
+  <div class="glow-up">
+    <img src="images/glow_up/before/b_juliet1.jpg" alt="Before Juliet">
+    <img src="images/glow_up/before/b_juliet2.JPG" alt="Before Juliet">
+    <img src="images/glow_up/before/b_juliet3.JPG" alt="Before Juliet">
     <p class="glowup-caption">Not broken, paused, waiting for the right heart to notice.</p>
   </div>
 
-
-  <h5 class="profile-section-title">Personality & Purr-sonal Life</h5>
-<table>
-  <tr>
-    <td>
-    <p><strong>Personality Vibes:</strong> Juliet is elegant, calm, and carries herself like royalty. She also surprises with playful Kung Fu moves.</p>
-    <p><strong>Quirks & Habits:</strong> Loves jumping to high places, sometimes falls but pretends it was planned. Prefers fresh, clean water bowls.</p>
-    <p><strong>Favorite Activities:</strong> Sleeping in dramatic poses.</p>
-    <p><strong>Best Friend(s):</strong> Romeo and Mikmik.</p>
-</td>
-  </tr>
-</table>
-<br>
+  <h4>Personality & Purr-sonal Life</h4>
+  <p><strong>Personality Vibes:</strong> Elegant, calm, carries herself like royalty. 
+     Also surprises with playful Kung Fu moves.</p>
+  <p><strong>Quirks & Habits:</strong> Loves jumping to high places, sometimes falls but 
+     pretends it was planned. Prefers fresh, clean water bowls.</p>
+  <p><strong>Favorite Activities:</strong> Sleeping in dramatic poses.</p>
+  <p><strong>Best Friends:</strong> Romeo and Mikmik.</p>
+</div>
 
 
  
-<!-- 2. Winter Milkee (MikMik) -->
-<section id="mikmik-profile">
-  <h4 class="profile-name">🐾Winter Milkee</h4>
+<!-- Winter Milkee (MikMik) -->
+<section class="cat-showcase" id="Mikmik">
+  <div class="cat-info">
+    <h2 class="cat-name">🐾Winter Milkee</h2>
+    <p class="cat-tagline">The Whisper That Found a Home</p>
 
+    <div class="cat-details">
+      <p><strong>Nickname(s):</strong> MikMik, Mikyaw</p>
+      <p><strong>Breed:</strong> Persian</p>
+      <p><strong>Birthday:</strong> June 07, 2016</p>
+      <p><strong>Age:</strong> 9 years old</p>
+      <p><strong>Eye Color:</strong> Yellow Green</p>
+      <p><strong>Fur Color:</strong> Black, Gray, and White</p>
+      <p><strong>Pattern:</strong> Solid</p>
+      <p><strong>Weight:</strong> 2.5–3 kg</p>
+    </div>
 
-  <div class="cat-profile-info">
-    <h5 class="profile-section-title">Profile:</h5>
-  <table>
-    <tr>
-      <td><strong>Nickname(s):</strong></td><td>MikMik, Mikyaw</td>
-      <td rowspan="9">
-        <img src="catropa_image/Profile/mikp1.jpeg" alt="MikMik" class="profile-photo-right">
-      </td>
-    </tr>
-      <tr><td><strong>Breed or Mix:</strong></td><td>Persian</td></tr>
-      <tr><td><strong>Birthday Guess:</strong></td><td>June 07, 2016</td></tr>
-      <tr><td><strong>Age:</strong></td><td>9 years old</td></tr>
-      <tr><td><strong>Eye Color:</strong></td><td>Yellow Green</td></tr>
-      <tr><td><strong>Fur Color:</strong></td><td>Black, Gray, and White</td></tr>
-      <tr><td><strong>Pattern:</strong></td><td>Solid</td></tr>
-    </table>
+    <button class="view-more">View Full Story</button>
+  </div>
+<div class="cat-image">
+    <img src="images/Profile Photos/MikMik Profile.jpeg" alt="NikMik the Cat">
+  </div>
 </section>
 
-
-  <div class="cat-profile-info">
-    <h5 class="profile-section-title">Adoption / Rescue Tale</h5>
-    <table>
-      <tr><td><strong>Date:</strong></td><td>June 07, 2016</td></tr>
-          <tr><td><strong>Location:</strong></td><td>Ajman, UAE</td></tr>
-          <tr><td><strong>Backstory/Journey</strong></td><td>
-            </table>
-
-
-            <p><strong>The Whisper That Found a Home</strong></p>
-            <p>Mikmik’s tale began in Ajman, where she grew up alongside her former owner’s child. She was once the sunshine of the household, playful, curious, and always ready to pounce into fun.
+  <!-- MikMik's Full Story (hidden until "View More") -->
+<div class="cat-story" id="mikmik-story">
+  <h3>Adoption / Rescue Tale</h3>
+  <p>
+    Mikmik’s tale began in Ajman, where she grew up alongside her former owner’s child. She was once the sunshine of the household, playful, curious, and always ready to pounce into fun.
             But one day, her spark faded. She grew quiet, curling up in corners instead of chasing shadows. Her owner, sadly, lost interest and decided it was time to let her go.</p>
-           
-            <p>The moment we met her, she looked straight at me and let out the softest, most soulful mikyaw. Our friend was stunned.
+
+
+    <p>The moment we met her, she looked straight at me and let out the softest, most soulful mikyaw. Our friend was stunned.
             “She never meows,” he said. “She never even moves unless she feels safe.”
             Right then, I knew, we were meant to be her forever family.</p>
-           
-            <p>After bringing her to the vet, we discovered she had ear mites and an upset tummy.
+
+
+    <p>After bringing her to the vet, we discovered she had ear mites and an upset tummy.
             At first, we thought we’d help her recover and then find her a loving home.
             But twice she was offered, and twice she was gently turned away. Each time, she came back to us, quietly, patiently, as if she already knew…</p>
            
-            <p>So we listened with open hearts.</p>
+    <p>So we listened with open hearts.</p>
             <p>We cuddled through quiet moments.</p>
             <p>We loved her, just as she was.</p>
             <p>And decided to keep her fur-ever ♥</p>
-          </td></tr>
-        </table>
-        <br>
 
-
-   <h5 class="profile-section-before">Paws for Hope</h5>
-  <div id="glow-up">
-  <!-- BEFORE PHOTOS -->
-  <div class="glow-set">
-    <img src="catropa_image/glow_up/before/b_mik1.jpg" alt="Before photo of Mikpik">
-    <img src="catropa_image/glow_up/before/b_mik3.jpeg" alt="Before photo of Mikpik">
-    <video controls><source src="catropa_image/glow_up/before/b_mik2.mp4" type="video/mp4"></video>
-    <p> Not broken, just paused, waiting for the right heart to notice...</p>
+  <h4>Paws for Hope</h4>
+  <div class="glow-up">
+    <img src="images/glow_up/before/b_mik1.JPG" alt="Before Mikmik">
+    <img src="images/glow_up/before/b_mik3.jpeg" alt="Before Mikmikt">
+    <p class="glowup-caption">Not broken, paused, waiting for the right heart to notice.</p>
   </div>
-</div>
-</section>
-<br>
 
-
-    <h5 class="profile-section-title">Personality & Purr-sonal Life</h5>
-<table>
-  <tr>
-    <td>
-      <p><strong>Personality Vibes:</strong></p>
-      <p>Sweet, soft-spoken, and full of quiet charm. Mikmik isn’t one to steal the spotlight; she’s the gentle soul who brings calm to the room and kindness to every paw she meets. As the second adopted cat, she’s never bossy, just beautifully balanced and endlessly patient.</p>
-      <p><strong>Quirks & Habits:</strong></p>
-      <p>Her signature mikyaw is rare and precious, reserved for moments of true connection. She has a heart-melting habit of placing her paw gently on your face when you’re sad, especially with children. It’s her way of saying, “I’m here.”</p>
-      <p><strong>Favorite Activities:</strong></p>
-      <ul>
+  <h4>Personality & Purr-sonal Life</h4>
+  <p><strong>Personality Vibes:</strong> Sweet, soft-spoken, and full of quiet charm. Mikmik isn’t one to steal the spotlight; she’s the gentle soul who brings calm to the room and kindness to every paw she meets. As the second adopted cat, she’s never bossy, just beautifully balanced and endlessly patient.</p>
+  <p><strong>Quirks & Habits:</strong> Her signature mikyaw is rare and precious, reserved for moments of true connection. She has a heart-melting habit of placing her paw gently on your face when you’re sad, especially with children. It’s her way of saying, “I’m here.”</p>
+  <p><strong>Favorite Activities:</strong></p>
+	<ul>
         <li>Quiet snuggles with her CATropa siblings.</li>
         <li>Offering gentle companionship to any cat who needs a friend.</li>
         <li>Comforting crying kids with her soft paw and soothing presence.</li>
         <li>Napping in cozy corners where she can keep an eye on everyone.</li>
       </ul>
-    </td>
-  </tr>
-</table>
-<br>
+  <p><strong>Best Friends:</strong> Juliet.</p>
+</div>
 
 
      <!-- 3. Jean Maku Spring  -->
@@ -1025,7 +992,7 @@
 
 
     <!-- Cat Trivia & Fun Facts -->
-<section id="cat-trivia" class="profile">
+<section id="trivia" class="profile">
   <h4 class="profile-name">Did You Know?</h4>
   <p>From ancient feline legends to quirky biological facts, cats have a way of surprising us.
      This section celebrates the curious, the clever, and the downright delightful truths about our whiskered companions.</p>
@@ -1094,5 +1061,7 @@
       <a href="https://www.tiktok.com/@catropa2020?_t=ZS-8zVWxk37iYa&_r=1" target="_blank">TikTok</a>
     </p>
   </footer>
+  <!-- JavaScripts -->
+<script src="scripts/navbar.js"></script>
 </body>
 </html>
