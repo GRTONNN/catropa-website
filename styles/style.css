@@ -655,62 +655,6 @@ footer a:hover {
 }
 
 
-/* Responsive Styles */
 
-/* Tablet */
-@media screen and (max-width: 1024px) {
-  body { font-size: 15px; }
-  .section { padding: 1.5rem; }
-}
 
-/* Mobile */
-@media screen and (max-width: 768px) {
-  body { font-size: 14px; }
-  .section { padding: 1rem; }
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-/* Small mobile */
-@media screen and (max-width: 480px) {
-  body { font-size: 13px; }
-  .section { padding: 0.8rem; }
-  .logo img { max-width: 120px; }
-  #backBtn {
-    bottom: 15px;
-    right: 15px;
-    padding: 8px 12px;
-    font-size: 0.85rem;
-  }
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px; 
-  margin: 0 auto;
-}
-
-.nav-links {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 1.5rem;
-}
-
-.section-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.section-content > div {
-  flex: 1 1 300px; 
-}
 
