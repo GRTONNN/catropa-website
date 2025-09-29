@@ -6,15 +6,15 @@ CATropa is a school project website celebrating our eight rescued cats. The webs
 You can view the website live here: https://grtonnn.github.io/catropa-website/
 
 📁 Project Structure
-catropa-website/
-├── index.html        # Main HTML page
-├── styles/           # CSS styles
-│   └── styles.css
-├── images/           # Images used in the website
-│   ├── cats/         # Cat images
-│   └── other/        # Miscellaneous images
-├── videos/           # Optional videos
-└── README.md         # Project documentation
+- catropa-website/
+  - index.html (Main HTML page)
+  - styles/
+    - styles.css (CSS styles)
+  - images/
+    - cats/ (Cat images)
+    - other/ (Miscellaneous images)
+  - videos/ (Optional videos)
+  - README.md (Project documentation)
 
 🚀 How to Run Locally
 
