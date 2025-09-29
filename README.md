@@ -13,7 +13,7 @@ You can view the website live here: https://grtonnn.github.io/catropa-website/
   - images/
     - cats/ (Cat images)
     - other/ (Miscellaneous images)
-  - videos/ (Optional videos)
+  - videos/ (Cat videos)
   - README.md (Project documentation)
 
 🚀 How to Run Locally
