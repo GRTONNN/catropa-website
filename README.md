@@ -51,3 +51,7 @@ You should now see the full website, including styling and images.
   - Flexbox for aligning sections and cards
   - Grid for gallery layouts
   - Media queries for responsiveness
+ 
+📝
+
+CATropa is a playful and interactive website that brings the stories of our rescued cats to life. It’s a showcase of HTML, CSS, and responsive design, packed with images, videos, and fun cat trivia that is perfect for cat lovers and a great example of creative web development!
