@@ -6,15 +6,14 @@ CATropa is a school project website celebrating our eight rescued cats. The webs
 You can view the website live here: https://grtonnn.github.io/catropa-website/
 
 📁 Project Structure
-cat-website/
+catropa-website/
 ├── index.html        # Main HTML page
 ├── styles/           # CSS styles
 │   └── styles.css
-├── scripts/          # JavaScript files 
-│   └── main.js
-├── images/           # Image assets
+├── images/           # Images used in the website
 │   ├── cats/         # Cat images
 │   └── other/        # Miscellaneous images
+├── videos/           # Optional videos
 └── README.md         # Project documentation
 
 🚀 How to Run Locally
@@ -31,8 +30,24 @@ cd cat-website
 
 3. Open the website
 
-Double-click index.html or
+- Double-click index.html or
 
-Right-click → Open With → your preferred browser
+- Right-click → Open With → your preferred browser
 
 You should now see the full website, including styling and images.
+
+🎨 Styling Notes
+
+- Responsive Design: Flexbox and CSS Grid for layouts that adapt to desktop, tablet, and mobile screens.
+
+- Custom Theme: Cat-inspired color palette and fonts for a playful, cohesive look.
+
+- Navigation: Smooth scrolling and “back” button functionality.
+
+- Images & Videos: Optimized for fast loading.
+
+- CSS Techniques:
+
+  - Flexbox for aligning sections and cards
+  - Grid for gallery layouts
+  - Media queries for responsiveness
