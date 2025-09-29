@@ -24,6 +24,11 @@ h2 {
   display: inline-block;
 }
 
+section {
+  padding-top: 100px;   /* extra space for the navbar */
+  margin-top: -100px;   /* pulls content back up visually */
+}
+
 /* HOME SECTION */
 .home {
   display: flex;
@@ -31,7 +36,7 @@ h2 {
   align-items: center;
   padding: 60px 10%;
   background: linear-gradient(135deg, #fdf6f0, #ffe4d9);
-  min-height: 90vh; /* full hero feel */
+  min-height: 90vh;
 }
 
 .home__content {
@@ -192,67 +197,61 @@ nav ul a:hover {
   color: #f28b82;
 }
 
-#backBtn {
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #fefefe;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button--back {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 10px 16px;
-  background-color: #f28b82;
+  background: #225e5f;
   color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 600;
   z-index: 1000;
-  opacity: 0;                
-  pointer-events: none;      
-  transition: opacity 0.4s, transform 0.4s;
-  transform: translateY(20px);
 }
 
-#backBtn.visible {
-  opacity: 1;                /* visible */
-  pointer-events: auto;      /* clickable */
-  transform: translateY(0);  /* slide into view */
+.button--back:hover {
+  background: #7c2a14;
 }
-
-#backBtn:hover {
-  background-color: #e57373;
-}
-
 
 /* MAIN CONTENT*/
-.cat-showcase {
+.cat__showcase {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1000px; /* or 1200px depending on your taste */
+  margin: 0 auto; 
+  gap: 40px;
   padding: 50px;
-  background: linear-gradient(to right, #e3f2f1, #fefefe);
-  min-height: 80vh;
+  background: linear-gradient(135deg, #fdf6f0, #ffe4d9)
 }
 
-.cat-info {
+.cat__info {
   flex: 1;
   padding: 20px;
 }
 
-.cat-name {
+.cat__name {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.cat-tagline {
+.cat__tagline {
   font-style: italic;
   margin-bottom: 20px;
   color: #666;
 }
 
-.cat-details p {
+.cat__details p {
   margin: 6px 0;
 }
 
-.view-more {
+.view__more {
   display: inline-block;
   padding: 10px 20px;
   background-color: #225e5f;
@@ -268,87 +267,79 @@ nav ul a:hover {
   box-shadow: none;    
 }
 
-.view-more:hover {
+.view__more:hover {
   background-color: #973719;
   transform: scale(1.05);
 }
 
-.cat-image {
+.cat__image {
   flex: 1;
   text-align: center;
 }
 
-.cat-image img {
-  max-width: 400px;
+.cat__image img {
+  max-width: 300px;
+  height: auto;
   border-radius: 16px;
   transition: transform 0.3s ease-in-out;
 }
 
-.cat-image img:hover {
+.cat__image img:hover {
   transform: scale(1.05);
 }
 
-.cat-story {
+.cat__story {
   display: none;
-  padding: 40px;
-  background: #fafafa;
-  border-top: 2px solid #ddd;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
 }
 
-.cat-story h3, .cat-story h4 {
-  margin-top: 20px;
+.cat__story:target {
+  display: block;
 }
 
-.glow-up img {
+.glow__up img {
   width: 150px;
   margin: 10px;
   border-radius: 10px;
 }
 
-
-/*Profile Section*/
-.profile-section {
-  text-align: center;
-  padding: 50px 20px 30px 20px;
-  background: linear-gradient(to right, #fff7f0, #ffe8d6); 
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.section-header h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #ff6f61; /
-}
-
-.section-header p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.section-header h2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #ff6f61;
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-
-.profile-photo-right {
-  width: 300px;
-  height: 400px;
-  border-radius: 15px;
-  object-fit: cover;
-  margin-left: 20px;
-  float: right;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+.glow__up img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+} 
 
 /* MOMENTS & WHISKERS GALLERY*/
+.moments-section {
+  text-align: center; 
+  margin: 0px auto;
+  max-width: 900px;
+}
+
+.moments-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.moments-section p {
+  font-size: 1.1rem;
+  margin-bottom: 150px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.moments-section video {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;  /* keeps video nicely sized */
+  border-radius: 15px;
+}
+
+
 #moments .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -465,7 +456,6 @@ nav ul a:hover {
 /* Community Showcase Section */
 .community-section {
   text-align: center; 
-  padding: 50px 20px;
   margin: 30px auto;
   max-width: 900px;
 }
