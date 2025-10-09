@@ -150,6 +150,49 @@ nav {
 
 }
 
+/* Style the hamburger icon */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+}
+
+/* --- Media Query for Mobile Nav --- */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #07535e;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin-top: 10px;
+    border: 2px solid #f28b82;
+    border-top: none;
+
+  }
+
+  .nav--visible {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
 /* Logo */
 nav .logo img {
   height: 60px;
