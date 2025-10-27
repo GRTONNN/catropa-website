@@ -51,6 +51,7 @@ You should now see the full website, including styling and images.
 This project was built by:
 
 Marjorie Navarro: Lead Designer / CSS & HTML
+
 Anton Roger Galfo: Lead Developer / JavaScript & Interactivity
 
 
@@ -59,9 +60,9 @@ Anton Roger Galfo: Lead Developer / JavaScript & Interactivity
 Our team followed this workflow:
 
 1.  **Planning:** We outlined the required sections and features together.
-2.  **HTML Structure:** [Name] built the main `index.html` page structure.
-3.  **Styling:** [Name] wrote the custom `style.css` for the design, colors, and fonts.
-4.  **JavaScript:** [Name] added interactivity for the modal, accordion, and buttons.
+2.  **HTML Structure:** Anton built the main `index.html` page structure.
+3.  **Styling:** Marjorie wrote the custom `style.css` for the design, colors, and fonts.
+4.  **JavaScript:** Anton added interactivity for the modal, accordion, and buttons.
 5.  **Refactoring (Week 8):** We worked together to integrate Bootstrap and refactor the navbar and layout to be responsive per project feedback.
 
 ### ✅ Feature Status
