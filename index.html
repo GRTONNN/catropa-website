@@ -6,25 +6,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to CATropa</title>
-  <link rel="stylesheet" href="styles/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="images/Logo_transparent-removebg-preview.png" alt="CATropa Logo">
-    </div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#cats">Catropa Crew</a></li>
-      <li><a href="#moments">Moments & Whiskers</a></li>
-      <li><a href="#community-showcase">Community & Stories</a></li>
-      <li><a href="#tips">Pet Care Tips</a></li>
-      <li><a href="#trivia">Did You Know?</a></li>
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #0d4a4e;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+  <img src="images/Logo_transparent-removebg-preview.png" alt="CATropa Logo" width="150"> 
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cats">CATROPA CREW</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#moments">MOMENTS & WHISKERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#community-showcase">COMMUNITY & STORIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">PET CARE TIPS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#trivia">DID YOU KNOW?</a>
+        </li> 
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
   
   <button class="nav-toggle" aria-label="toggle navigation">
   <span class="hamburger"></span>
@@ -33,24 +51,28 @@
   </nav>
 
     <!-- Back Button -->
-      <button class="button button--scroll-top" id="scrollTopBtn" title="Go to top">↑</button>
+    <button class="button button--scroll-top" id="scrollTopBtn" title="Go to top" aria-label="Scroll back to top">↑</button>
 
     <!-- Home / Welcome -->
 <section id="home" class="home">
-  <div class="home__content">
-    <h1 class="home__title">Welcome to <span>CATropa!</span></h1>
-    <p class="home__subtitle">
-      A celebration of our eight rescued cats — each with their own charm, quirks, and heart-melting tales.
-    </p>
-    <p class="home__description">
-      From hilarious habits to heroic rescues, you’ll meet the fabulous feline stars of CATropa Crew —
-      whiskered wonders with unforgettable personalities. This isn’t just a showcase, it’s a reminder:
-      every cat deserves love, care, and a forever home. 🐾
-    </p>
-    <a href="#cats" class="home__button">Meet the Crew</a>
-  </div>
-  <div class="home__image">
-    <img src="images/moments/pjuliet.jpg" alt="Cute cat illustration">
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 home__content">
+        <h1 class="home__title">Welcome to <span>CATropa!</span></h1>
+        <p class="home__subtitle">
+          A celebration of our eight rescued cats — each with their own charm, quirks, and heart-melting tales.
+        </p>
+        <p class="home__description">
+          From hilarious habits to heroic rescues, you’ll meet the fabulous feline stars of CATropa Crew —
+          whiskered wonders with unforgettable personalities. This isn’t just a showcase, it’s a reminder:
+          every cat deserves love, care, and a forever home. 🐾
+        </p>
+        <a href="#cats" class="home__button">Meet the Crew</a>
+      </div>
+      <div class="col-lg-6 home__image text-center">
+        <img src="images/moments/pjuliet.jpg" alt="A photo of Juliet the cat" class="img-fluid rounded-3">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -59,565 +81,581 @@
   <section id="cats" class="profile">
    
  <!-- Juliet Showcase -->
-<section class="cat__showcase" id="juliet">
-  <div class="cat__info">
-    <h2 class="cat__name">🐾 Juliet</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> Bebi, Julieta Magalpok</p>
-      <p><strong>Breed:</strong> Persian</p>
-      <p><strong>Birthday:</strong> May 21, 2014</p>
-      <p><strong>Age:</strong> 12 years old</p>
-      <p><strong>Eye Color:</strong> Green</p>
-      <p><strong>Fur Color:</strong> Solid Light Gray & White</p>
-      <p><strong>Pattern:</strong> Bi-color</p>
-      <p><strong>Weight:</strong> 2.5–3 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="juliet">
+    <div class="cat__info col-lg-6">
+      <h2 class="cat__name">🐾 Juliet</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> Bebi, Julieta Magalpok</p>
+        <p><strong>Breed:</strong> Persian</p>
+        <p><strong>Birthday:</strong> May 21, 2014</p>
+        <p><strong>Age:</strong> 12 years old</p>
+        <p><strong>Eye Color:</strong> Green</p>
+        <p><strong>Fur Color:</strong> Solid Light Gray & White</p>
+        <p><strong>Pattern:</strong> Bi-color</p>
+        <p><strong>Weight:</strong> 2.5–3 kg</p>
+      </div>
+      <a href="#juliet-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#juliet-story" class="view__more">View Full Story</a>
-  </div>
   
-<div class="cat__image">
-    <img src="images/Profile Photos/julietp1.jpeg" alt="Juliet the Cat">
-  </div>
-</section>
+<div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/julietp1.jpeg" alt="Juliet the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
 <!-- Juliet's Full Story (hidden until "View More") -->
 <div class="cat__story" id="juliet-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">The Queen’s Second Chance</p>
-  <p>Once upon a whisker, in a world steeped in the aroma of karak tea, sweet treats, and the warm bustle of Arab hospitality, there lived a regal Persian beauty named Juliet.
-    To those closest to her, she was simply Bebi. With her silken coat of light gray and white, and eyes as green and mesmerizing as an oasis at dusk,
-    Bebi reigned supreme, not over palaces or gardens, but over the villa kingdom, where she was the undisputed queen.</p>
-
-
-    <p>But Juliet wasn’t only a pretty face. She had a love story worthy of Shakespeare. Her partner? A dashing feline named Romeo.
-    Together, they shared cozy naps, synchronized tail flicks, and even raised a litter of adorable kittens. Life was purrfect.</p>
-
-
-    <p>Then came a twist. Juliet’s human, her original Furr Parent, received surprising news: a baby on the way, and the doctor’s orders to avoid cats. It was a heartbreaking moment.
-    But instead of turning their backs on Juliet, her humans did something beautiful, they chose love over abandonment.
-    They offered her up for adoption, hoping someone would see the magic in her.</p>
-           
-    <p>And that’s when fate stepped in.</p>
-    <p>On May 21, 2014, Juliet found her new chapter with a kind-hearted officemate (that’s us!).
-    From the moment she stepped into her new home, she brought elegance, sass, and a whole lot of cuddles.
-    Her journey to become a beloved family member is a reminder that every cat deserves a second chance and a soft place to land.</p>
-       
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_juliet1.jpg" alt="Before Juliet">
-    <img src="images/glow_up/before/b_juliet2.JPG" alt="Before Juliet">
-    <img src="images/glow_up/before/b_juliet3.JPG" alt="Before Juliet">
-    <p class="glowup__caption">Not broken, paused, waiting for the right heart to notice.</p>
-  </div>
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">The Queen’s Second Chance</p>
+    <p>Once upon a whisker, in a world steeped in the aroma of karak tea, sweet treats, and the warm bustle of Arab hospitality, there lived a regal Persian beauty named Juliet.
+      To those closest to her, she was simply Bebi. With her silken coat of light gray and white, and eyes as green and mesmerizing as an oasis at dusk,
+      Bebi reigned supreme, not over palaces or gardens, but over the villa kingdom, where she was the undisputed queen.</p>
+      <p>But Juliet wasn’t only a pretty face. She had a love story worthy of Shakespeare. Her partner? A dashing feline named Romeo.
+      Together, they shared cozy naps, synchronized tail flicks, and even raised a litter of adorable kittens. Life was purrfect.</p>
+      <p>Then came a twist. Juliet’s human, her original Furr Parent, received surprising news: a baby on the way, and the doctor’s orders to avoid cats. It was a heartbreaking moment.
+      But instead of turning their backs on Juliet, her humans did something beautiful, they chose love over abandonment.
+      They offered her up for adoption, hoping someone would see the magic in her.</p>
+      <p>And that’s when fate stepped in.</p>
+      <p>On May 21, 2014, Juliet found her new chapter with a kind-hearted officemate (that’s us!).
+      From the moment she stepped into her new home, she brought elegance, sass, and a whole lot of cuddles.
+      Her journey to become a beloved family member is a reminder that every cat deserves a second chance and a soft place to land.</p>
+         
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_juliet1.jpg" alt="Before Juliet" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_juliet2.JPG" alt="Before Juliet" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_juliet3.JPG" alt="Before Juliet" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12">Not broken, paused, waiting for the right heart to notice.</p>
+    </div>
 
   <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Elegant, calm, carries herself like royalty. 
-     Also surprises with playful Kung Fu moves.</p>
-  <p><strong>Quirks & Habits:</strong> Loves jumping to high places, sometimes falls but 
-     pretends it was planned. Prefers fresh, clean water bowls.</p>
-  <p><strong>Favorite Activities:</strong> Sleeping in dramatic poses.</p>
-  <p><strong>Best Friends:</strong> <b>Romeo</b> and <b>Mikmik.</b></p>
-  <a href="#Juliet-story" class="view__more close">Hide Story</a>
+    <p><strong>Personality Vibes:</strong> Elegant, calm, carries herself like royalty. 
+       Also surprises with playful Kung Fu moves.</p>
+    <p><strong>Quirks & Habits:</strong> Loves jumping to high places, sometimes falls but 
+       pretends it was planned. Prefers fresh, clean water bowls.</p>
+    <p><strong>Favorite Activities:</strong> Sleeping in dramatic poses.</p>
+    <p><strong>Best Friends:</strong> <b>Romeo</b> and <b>Mikmik.</b></p>
+    <a href="#Juliet-story" class="view__more close">Hide Story</a>
+  </div>
 </div>
 
 <!-- Winter Milkee (MikMik) -->
-<section class="cat__showcase" id="Mikmik">
-  <div class="cat__info">
-    <h2 class="cat__name">🐾Winter Milkee</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> MikMik, Mikyaw</p>
-      <p><strong>Breed:</strong> Persian</p>
-      <p><strong>Birthday:</strong> June 07, 2016</p>
-      <p><strong>Age:</strong> 9 years old</p>
-      <p><strong>Eye Color:</strong> Yellow Green</p>
-      <p><strong>Fur Color:</strong> Black, Gray, and White</p>
-      <p><strong>Pattern:</strong> Solid</p>
-      <p><strong>Weight:</strong> 2.5–3 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="Mikmik">
+    <div class="cat__info col-lg-6">
+      <h2 class="cat__name">🐾Winter Milkee</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> MikMik, Mikyaw</p>
+        <p><strong>Breed:</strong> Persian</p>
+        <p><strong>Birthday:</strong> June 07, 2016</p>
+        <p><strong>Age:</strong> 9 years old</p>
+        <p><strong>Eye Color:</strong> Yellow Green</p>
+        <p><strong>Fur Color:</strong> Black, Gray, and White</p>
+        <p><strong>Pattern:</strong> Solid</p>
+        <p><strong>Weight:</strong> 2.5–3 kg</p>
+      </div>
+      <a href="#mikmik-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#mikmik-story" class="view__more">View Full Story</a>
-  </div>
-<div class="cat__image">
-    <img src="images/Profile Photos/mikp1.jpeg" alt="MikMik the Cat">
-  </div>
-</section>
+  <div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/mikp1.jpeg" alt="MikMik the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
   <!-- Winter Milkee's Full Story (hidden until "View More") -->
 <div class="cat__story" id="mikmik-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">The Whisper That Found a Home</p>
-  <p>
-    Mikmik’s tale began in Ajman, where she grew up alongside her former owner’s child. She was once the sunshine of the household, playful, curious, and always ready to pounce into fun.
-            But one day, her spark faded. She grew quiet, curling up in corners instead of chasing shadows. Her owner, sadly, lost interest and decided it was time to let her go.</p>
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">The Whisper That Found a Home</p>
+    <p>
+      Mikmik’s tale began in Ajman, where she grew up alongside her former owner’s child. She was once the sunshine of the household, playful, curious, and always ready to pounce into fun.
+              But one day, her spark faded. She grew quiet, curling up in corners instead of chasing shadows. Her owner, sadly, lost interest and decided it was time to let her go.</p>
+      <p>The moment we met her, she looked straight at me and let out the softest, most soulful mikyaw. Our friend was stunned.
+              “She never meows,” he said. “She never even moves unless she feels safe.”
+              Right then, I knew, we were meant to be her forever family.</p>
+      <p>After bringing her to the vet, we discovered she had ear mites and an upset tummy.
+              At first, we thought we’d help her recover and then find her a loving home.
+              But twice she was offered, and twice she was gently turned away. Each time, she came back to us, quietly, patiently, as if she already knew…</p>
+      <p>So we listened with open hearts.</p>
+              <p>We cuddled through quiet moments.</p>
+              <p>We loved her, just as she was.</p>
+              <p>And decided to keep her fur-ever ♥</p>
 
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_mik1.JPG" alt="Before Mikmik" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_mik3.jpeg" alt="Before Mikmikt" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12">Faded spark, quiet heart, just waiting to be seen.</p>
+    </div>
 
-    <p>The moment we met her, she looked straight at me and let out the softest, most soulful mikyaw. Our friend was stunned.
-            “She never meows,” he said. “She never even moves unless she feels safe.”
-            Right then, I knew, we were meant to be her forever family.</p>
-
-
-    <p>After bringing her to the vet, we discovered she had ear mites and an upset tummy.
-            At first, we thought we’d help her recover and then find her a loving home.
-            But twice she was offered, and twice she was gently turned away. Each time, she came back to us, quietly, patiently, as if she already knew…</p>
-           
-    <p>So we listened with open hearts.</p>
-            <p>We cuddled through quiet moments.</p>
-            <p>We loved her, just as she was.</p>
-            <p>And decided to keep her fur-ever ♥</p>
-
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_mik1.JPG" alt="Before Mikmik">
-    <img src="images/glow_up/before/b_mik3.jpeg" alt="Before Mikmikt">
-    <p class="glowup__caption">Faded spark, quiet heart, just waiting to be seen.</p>
+    <h2>Personality & Purr-sonal Life</h2>
+    <p><strong>Personality Vibes:</strong> Sweet, soft-spoken, and full of quiet charm. Mikmik isn’t one to steal the spotlight; she’s the gentle soul who brings calm to the room and kindness to every paw she meets. As the second adopted cat, she’s never bossy, just beautifully balanced and endlessly patient.</p>
+    <p><strong>Quirks & Habits:</strong> Her signature mikyaw is rare and precious, reserved for moments of true connection. She has a heart-melting habit of placing her paw gently on your face when you’re sad, especially with children. It’s her way of saying, “I’m here.”</p>
+    <p><strong>Favorite Activities:</strong></p>
+    <ul>
+          <li>Quiet snuggles with her CATropa siblings.</li>
+          <li>Offering gentle companionship to any cat who needs a friend.</li>
+          <li>Comforting crying kids with her soft paw and soothing presence.</li>
+          <li>Napping in cozy corners where she can keep an eye on everyone.</li>
+        </ul>
+    <p><strong>Best Friends:</strong> <b>Juliet.</b></p>
+    <a href="#Mikmik-story" class="view__more close">Hide Story</a>
   </div>
-
-  <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Sweet, soft-spoken, and full of quiet charm. Mikmik isn’t one to steal the spotlight; she’s the gentle soul who brings calm to the room and kindness to every paw she meets. As the second adopted cat, she’s never bossy, just beautifully balanced and endlessly patient.</p>
-  <p><strong>Quirks & Habits:</strong> Her signature mikyaw is rare and precious, reserved for moments of true connection. She has a heart-melting habit of placing her paw gently on your face when you’re sad, especially with children. It’s her way of saying, “I’m here.”</p>
-  <p><strong>Favorite Activities:</strong></p>
-	<ul>
-        <li>Quiet snuggles with her CATropa siblings.</li>
-        <li>Offering gentle companionship to any cat who needs a friend.</li>
-        <li>Comforting crying kids with her soft paw and soothing presence.</li>
-        <li>Napping in cozy corners where she can keep an eye on everyone.</li>
-      </ul>
-  <p><strong>Best Friends:</strong> Juliet.</p>
-  <a href="#Mikmik-story" class="view__more close">Hide Story</a>
 </div>
 
 <!-- Jean Maku Showcase -->
-<section class="cat__showcase" id="jean">
-  <div class="cat__info">
-    <h2 class="cat__name">🐾 Jean Maku Spring</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> Makmak, Maku, Makumang</p>
-      <p><strong>Breed:</strong> Arabian Mau, Abyssinian</p>
-      <p><strong>Birthday:</strong> April 22, 2018</p>
-      <p><strong>Age:</strong> 7 years old</p>
-      <p><strong>Eye Color:</strong> Yellow Green</p>
-      <p><strong>Fur Color:</strong> Mix of Ruddy, Cinnamon, and Fawn/p>
-      <p><strong>Pattern:</strong> Agouti</p>
-      <p><strong>Weight:</strong> 3–4 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="jean">
+    <div class="cat__info col-lg-6">
+      <h2 class="cat__name">🐾 Jean Maku Spring</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> Makmak, Maku, Makumang</p>
+        <p><strong>Breed:</strong> Arabian Mau, Abyssinian</p>
+        <p><strong>Birthday:</strong> April 22, 2018</p>
+        <p><strong>Age:</strong> 7 years old</p>
+        <p><strong>Eye Color:</strong> Yellow Green</p>
+        <p><strong>Fur Color:</strong> Mix of Ruddy, Cinnamon, and Fawn</p>
+        <p><strong>Pattern:</strong> Agouti</p>
+        <p><strong>Weight:</strong> 3–4 kg</p>
+      </div>
+      <a href="#jean-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#jean-story" class="view__more">View Full Story</a>
-  </div>
 
-<div class="cat__image">
-    <img src="images/Profile Photos/makup1.jpeg" alt="Jean the Cat">
-  </div>
-</section>
+  <div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/makup1.jpeg" alt="Jean the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
 <!-- Jean's Full Story (hidden until "View More") -->
 <div class="cat__story" id="jean-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">The Wounded Warrior Who Became Alpha</p>
-  <p>
-    Way back in 2018, we first met Maku at the pantry door of an office in Al Montazah Park. She was tiny, barely a month old, thin, hungry, and heartbreakingly wounded. Her left arm had a deep, visible injury, and you could feel the pain she was carrying just by looking at her.</p>
-
-
-    <p>The next day, we returned with food for the stray kittens. Maku ate gratefully, and that’s when we knew, we couldn’t leave her behind. We brought her to the vet, where she was gently sedated so her infected wound could be thoroughly cleaned. Her cries during treatment were raw and real, proof of the pain she had endured far too early in life.</p>
-
-
-    <p>The vet told us plainly, if we hadn’t brought her in, she would’ve slowly died from the infection.
-
-At first, we planned to foster her only until she healed. But the universe had other plans. Seven years later, she’s still with us, strong, sassy, and proudly living her Alpha attitude.
-
-She may have started life in pain, but today she rules her world with confidence, courage, and a whole lot of cattitude.</p>
-       
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_maku1.jpeg" alt="Before Maku">
-    <img src="images/glow_up/before/b_maku2.jpeg" alt="Before Maku">
-    <img src="images/glow_up/before/b_maku3.jpeg" alt="Before Maku">
-    <p class="glowup__caption">Tiny, wounded, and fighting for a chance to be seen.</p>
-  </div>
-
-  <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Confident, fearless, and full of sass. Maku is a chatterbox with strong opinions, she’ll meow her thoughts loud and proud, especially when things don’t go her way. And if she disagrees? She’ll turn her back, face the wall, and sulk in silent protest like a tiny, furry philosopher. As the proud Alpha of the crew, she’s protective, independent, and always one paw ahead. But beneath that bold exterior is a survivor’s heart and a soft spot for those she loves.</p>
-  <p><strong>Quirks & Habits:</strong></p>
-      <ul>
-        <li>Has a signature strut that says, “I run this place.”</li>
-        <li>Prefers her space but will surprise you with sudden cuddles, on her terms, of course.</li>
-        <li>Gives side-eye to loud noises and unfamiliar guests, but warms up with time and treats.</li>
-        <li>Meticulously organized, her food, water, and grass must be arranged just right, or she’ll stare, pace, and politely protest until everything is in perfect order.</li>
-      </ul>
-  <p><strong>Favorite Activities:</strong></p>
-      <ul>
-        <li>Bossing everyone around with meows and tail flicks</li>
-        <li>Rearranging her space until it’s just right</li>
-        <li>Surprise cuddles when you least expect them</li>
-        <li>Watching over her CATropa crew like a tiny general</li>
-      </ul>
-      <p><strong>Best Friend(s):</strong></p>
-      <p>She’s closest to Mikmik, her quiet caretaker during her early days of healing, gentle, patient, and always nearby when Maku needed comfort. Respects Juliet’s elegance, tolerates Monmon’s calm, and occasionally challenges him just to keep things spicy.</p>
-      <a href="#Jean-story" class="view__more close">Hide Story</a>
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">The Wounded Warrior Who Became Alpha</p>
+    <p>
+      Way back in 2018, we first met Maku at the pantry door of an office in Al Montazah Park. She was tiny, barely a month old, thin, hungry, and heartbreakingly wounded. Her left arm had a deep, visible injury, and you could feel the pain she was carrying just by looking at her.</p>
+      <p>The next day, we returned with food for the stray kittens. Maku ate gratefully, and that’s when we knew, we couldn’t leave her behind. We brought her to the vet, where she was gently sedated so her infected wound could be thoroughly cleaned. Her cries during treatment were raw and real, proof of the pain she had endured far too early in life.</p>
+      <p>The vet told us plainly, if we hadn’t brought her in, she would’ve slowly died from the infection.
+  At first, we planned to foster her only until she healed. But the universe had other plans. Seven years later, she’s still with us, strong, sassy, and proudly living her Alpha attitude.
+  She may have started life in pain, but today she rules her world with confidence, courage, and a whole lot of cattitude.</p>
+         
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_maku1.jpeg" alt="Before Maku" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_maku2.jpeg" alt="Before Maku" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_maku3.jpeg" alt="Before Maku" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12">Tiny, wounded, and fighting for a chance to be seen.</p>
     </div>
+
+    <h2>Personality & Purr-sonal Life</h2>
+    <p><strong>Personality Vibes:</strong> Confident, fearless, and full of sass. Maku is a chatterbox with strong opinions, she’ll meow her thoughts loud and proud, especially when things don’t go her way. And if she disagrees? She’ll turn her back, face the wall, and sulk in silent protest like a tiny, furry philosopher. As the proud Alpha of the crew, she’s protective, independent, and always one paw ahead. But beneath that bold exterior is a survivor’s heart and a soft spot for those she loves.</p>
+    <p><strong>Quirks & Habits:</strong></p>
+        <ul>
+          <li>Has a signature strut that says, “I run this place.”</li>
+          <li>Prefers her space but will surprise you with sudden cuddles, on her terms, of course.</li>
+          <li>Gives side-eye to loud noises and unfamiliar guests, but warms up with time and treats.</li>
+          <li>Meticulously organized, her food, water, and grass must be arranged just right, or she’ll stare, pace, and politely protest until everything is in perfect order.</li>
+        </ul>
+    <p><strong>Favorite Activities:</strong></p>
+        <ul>
+          <li>Bossing everyone around with meows and tail flicks</li>
+          <li>Rearranging her space until it’s just right</li>
+          <li>Surprise cuddles when you least expect them</li>
+          <li>Watching over her CATropa crew like a tiny general</li>
+        </ul>
+        <p><strong>Best Friend(s):</strong></p>
+        <p>She’s closest to Mikmik, her quiet caretaker during her early days of healing, gentle, patient, and always nearby when Maku needed comfort. Respects Juliet’s elegance, tolerates Monmon’s calm, and occasionally challenges him just to keep things spicy.</p>
+        <a href="#Jean-story" class="view__more close">Hide Story</a>
+    </div>
+  </div>
 
 <!-- Nika Showcase -->
-<section class="cat__showcase" id="nika">
-  <div class="cat__info">
-    <h2 class="cat__name">🐾 Nika ScarletSnow (Nika)</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> Khang Khang, Nika</p>
-      <p><strong>Breed:</strong> Arabian Mau, Calico</p>
-      <p><strong>Birthday:</strong> July 10, 2019</p>
-      <p><strong>Age:</strong> 	6 years old</p>
-      <p><strong>Eye Color:</strong> Yellow</p>
-      <p><strong>Fur Color:</strong> White with Orange and Black patches/p>
-      <p><strong>Pattern:</strong> Tri-color coat</p>
-      <p><strong>Weight:</strong> 3.5–4 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="nika">
+    <div class="cat__info col-lg-6">
+      <h2 class="cat__name">🐾 Nika ScarletSnow (Nika)</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> Khang Khang, Nika</p>
+        <p><strong>Breed:</strong> Arabian Mau, Calico</p>
+        <p><strong>Birthday:</strong> July 10, 2019</p>
+        <p><strong>Age:</strong> 	6 years old</p>
+        <p><strong>Eye Color:</strong> Yellow</p>
+        <p><strong>Fur Color:</strong> White with Orange and Black patches</p>
+        <p><strong>Pattern:</strong> Tri-color coat</p>
+        <p><strong>Weight:</strong> 3.5–4 kg</p>
+      </div>
+      <a href="#nika-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#nika-story" class="view__more">View Full Story</a>
-  </div>
 
-<div class="cat__image">
-    <img src="images/Profile Photos/Nika Profile.jpeg" alt="Nika the Cat">
-  </div>
-</section>
+  <div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/Nika Profile.jpeg" alt="Nika the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
 <!-- Nika's Full Story (hidden until "View More") -->
 <div class="cat__story" id="nika-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">From Street Watcher to Sofa Snoozer</p>
-  <p>
-    Nika was a familiar face in our neighborhood, a quiet, scruffy little cat who lived near the entrance of our residential building. She wasn’t loud or demanding, only patiently waiting each day for someone kind enough to offer her a meal. We’d often see her sitting by the doorway, watching people come and go like a silent gatekeeper.</p>
-
-
-    <p>Though we fed her regularly, Nika remained aloof and wary of humans. We never knew why, maybe life hadn’t been kind to her before. But day by day, she started to recognize us. She’d stare as we left for work and wait for us to return, her eyes following us like she was trying to understand our rhythm.</p>
-
-
-    <p>What truly tugged at our hearts was her uncanny resemblance to our beloved cat back in the Philippines, Niko. It felt like fate had placed her there, waiting for us to notice.
-
-And one day, we did more than notice—we brought her home.
-
-Her first act as a newly adopted cat? She pooped right at our doorstep. 😂 A nervous welcome, but one we’ll never forget.</p>
-
-    <p>Now at six years old, Nika is still a bit skittish. Trips to the vet or unfamiliar sounds can trigger her “panic poop” or “fear pee” reflex. But she’s ours, quirks and all—and we wouldn’t trade her for the world.</p>
-       
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_nika1.jpeg" alt="Before Nika">
-    <img src="images/glow_up/before/b_nika2.jpg" alt="Before Nika">
-    <p class="glowup__caption">Just a quiet girl waiting by the door and hoping someone would notice.</p>
-  </div>
-
-  <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Gentle but guarded. Nika’s heart is big, but she keeps it tucked behind a cautious stare. She’s the quiet type who watches from the sidelines until she decides you’re safe.</p>
-  <p><strong>Quirks & Habits:</strong></p>
-      <ul>
-        <li>Nervous pooper when stressed (especially vet days!)</li>
-        <li>Stares deeply, like she’s reading your soul or judging your outfit</li>
-      </ul>
-  <p><strong>Favorite Activities:</strong></p>
-      <ul>
-        <li>Getting gentle taps on her back (she pretends not to like it, but secretly does)</li>
-        <li>Being squished in cuddles so dramatically, she lets out a squeal that sounds suspiciously like a tiny piglet</li>
-        <li>Quietly judging her humans while they go about their day</li>
-      </ul>
-      <p><strong>Best Friend(s):</strong></p>
-      <p><b>MerMer</b> the mischievous teaser who lives to poke fun and steal her toys and <b>Potpot</b> her sworn enemy and rival in all things territorial. They don’t share snacks, naps, or glances, only dramatic standoffs and occasional paw swipes.</p>
-      <a href="#Nika-story" class="view__more close">Hide Story</a>
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">From Street Watcher to Sofa Snoozer</p>
+    <p>
+      Nika was a familiar face in our neighborhood, a quiet, scruffy little cat who lived near the entrance of our residential building. She wasn’t loud or demanding, only patiently waiting each day for someone kind enough to offer her a meal. We’d often see her sitting by the doorway, watching people come and go like a silent gatekeeper.</p>
+      <p>Though we fed her regularly, Nika remained aloof and wary of humans. We never knew why, maybe life hadn’t been kind to her before. But day by day, she started to recognize us. She’d stare as we left for work and wait for us to return, her eyes following us like she was trying to understand our rhythm.</p>
+      <p>What truly tugged at our hearts was her uncanny resemblance to our beloved cat back in the Philippines, Niko. It felt like fate had placed her there, waiting for us to notice.
+  And one day, we did more than notice—we brought her home.
+  Her first act as a newly adopted cat? She pooped right at our doorstep. 😂 A nervous welcome, but one we’ll never forget.</p>
+      <p>Now at six years old, Nika is still a bit skittish. Trips to the vet or unfamiliar sounds can trigger her “panic poop” or “fear pee” reflex. But she’s ours, quirks and all—and we wouldn’t trade her for the world.</p>
+         
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_nika1.jpeg" alt="Before Nika" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_nika2.jpg" alt="Before Nika" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12">Just a quiet girl waiting by the door and hoping someone would notice.</p>
     </div>
 
+    <h2>Personality & Purr-sonal Life</h2>
+    <p><strong>Personality Vibes:</strong> Gentle but guarded. Nika’s heart is big, but she keeps it tucked behind a cautious stare. She’s the quiet type who watches from the sidelines until she decides you’re safe.</p>
+    <p><strong>Quirks & Habits:</strong></p>
+        <ul>
+          <li>Nervous pooper when stressed (especially vet days!)</li>
+          <li>Stares deeply, like she’s reading your soul or judging your outfit</li>
+        </ul>
+    <p><strong>Favorite Activities:</strong></p>
+        <ul>
+          <li>Getting gentle taps on her back (she pretends not to like it, but secretly does)</li>
+          <li>Being squished in cuddles so dramatically, she lets out a squeal that sounds suspiciously like a tiny piglet</li>
+          <li>Quietly judging her humans while they go about their day</li>
+        </ul>
+        <p><strong>Best Friend(s):</strong></p>
+        <p><b>MerMer</b> the mischievous teaser who lives to poke fun and steal her toys and <b>Potpot</b> her sworn enemy and rival in all things territorial. They don’t share snacks, naps, or glances, only dramatic standoffs and occasional paw swipes.</p>
+        <a href="#Nika-story" class="view__more close">Hide Story</a>
+    </div>
+  </div>
 
 <!-- Grey Summer Showcase -->
-<section class="cat__showcase" id="grey">
-  <div class="cat__info">
-    <h2 class="cat__name">🐾 Grey Summer</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> Monmon, Mermer</p>
-      <p><strong>Breed:</strong> Domestic Shorthair, Arabian Mau</p>
-      <p><strong>Birthday:</strong> August 1, 2018</p>
-      <p><strong>Age:</strong> 	6 years old</p>
-      <p><strong>Eye Color:</strong> Green</p>
-      <p><strong>Fur Color:</strong> Tri-color</p>
-      <p><strong>Pattern:</strong> Tabby</p>
-      <p><strong>Weight:</strong> 9.5 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="grey">
+    <div class="cat__info col-lg-6">
+      <h2 class="cat__name">🐾 Grey Summer</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> Monmon, Mermer</p>
+        <p><strong>Breed:</strong> Domestic Shorthair, Arabian Mau</p>
+        <p><strong>Birthday:</strong> August 1, 2018</p>
+        <p><strong>Age:</strong> 	6 years old</p>
+        <p><strong>Eye Color:</strong> Green</p>
+        <p><strong>Fur Color:</strong> Tri-color</p>
+        <p><strong>Pattern:</strong> Tabby</p>
+        <p><strong>Weight:</strong> 9.5 kg</p>
+      </div>
+      <a href="#grey-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#grey-story" class="view__more">View Full Story</a>
-  </div>
 
-<div class="cat__image">
-    <img src="images/Profile Photos/merp1.jpeg" alt="Grey the Cat">
-  </div>
-</section>
+  <div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/merp1.jpeg" alt="Grey the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
 <!-- Grey's Full Story (hidden until "View More") -->
 <div class="cat__story" id="grey-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">The Day He Chose Us</p>
-  <p>
-    Grey Summer, our first male cat and, in many ways, our first love. We called him Monmon because the name just fit his gentle, soulful vibe. His story began at our workplace. During break time, I’d sit outside under a tree near the pantry, and like clockwork, Monmon would quietly appear. No meowing, no begging, just a calm presence beside me. He’d sniff my bag, settle in, and keep me company like a furry little lunch buddy.
-
-Unlike the other stray cats who would gather noisily around the pantry, Monmon never joined the crowd. He waited patiently, walked with me to the gate after every shift, and knew exactly where his food and water were, in our car, Pogee. It became our secret routine, like a daily date with a silent suitor.</p>
-
-
-    <p>One day, we joked: “If he climbs into the driver’s seat, that means he wants to come home.” And guess what? He did.We hesitated. Juliet, Mikmik, Maku, and Nika were already part of our growing CATropa. But Monmon didn’t just ask to join. He belonged.
-
-
-Jaraaaannnnn! He’s now our Mr. Tabby Cat, our quiet king, and the heart of our crew.</p>
-
-
-    <p>Walks you to the gate like a gentleman escort
-
-Sniffs your bag like he’s checking for secrets
-
-Prefers solo moments over noisy crowds</p>
-       
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_mer1.jpeg" alt="Before Grey">
-    <img src="images/glow_up/before/b_mer2.jpeg" alt="Before Grey">
-    <p class="glowup__caption">Calm eyes with quiet paws and a soft heart.</p>
-  </div>
-
-  <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Monmon is the definition of calm and collected. He’s gentle, observant,
-        and carries himself like a wise old soul, no drama, no fuss, just quiet loyalty and soft stares that say everything.</p>
-  <p><strong>Quirks & Habits:</strong></p>
-      <ul>
-        <li>Walks you to the gate like a gentleman escort</li>
-        <li>Sniffs your bag like he’s checking for secrets</li>
-        <li>Prefers solo moments over noisy crowds</li>
-      </ul>
-  <p><strong>Favorite Activities:</strong></p>
-      <ul>
-        <li>Quiet strolls with his humans</li>
-        <li>Calling out a dramatic “Nyarennn!” when he wants water from the faucet.</li>
-        <li>Napping like nothing ever happened, with zero remorse</li>
-        <li>
-          Launching a full-scale rebellion if dinner is late or the food section is empty</li>
-<li>Wrecking the sack of cat food</li>
-            <li>Scattering litter like confetti</li>
-            <li>Toppling the trash bin, laundry basket, and anything else in reach</li>
-            <li>Basically transforming into a one-cat disaster squad</li>
-      </ul>
-      <p><strong>Best Friend(s):</strong></p>
-      <p>He’s closest to <b>Juliet</b> who respects his quiet charm and while he’s not one for cat politics, he’s earned the respect of the entire CATropa crew.</p>
-      <a href="#Grey-story" class="view__more close">Hide Story</a>
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">The Day He Chose Us</p>
+    <p>
+      Grey Summer, our first male cat and, in many ways, our first love. We called him Monmon because the name just fit his gentle, soulful vibe. His story began at our workplace. During break time, I’d sit outside under a tree near the pantry, and like clockwork, Monmon would quietly appear. No meowing, no begging, just a calm presence beside me. He’d sniff my bag, settle in, and keep me company like a furry little lunch buddy.
+  Unlike the other stray cats who would gather noisily around the pantry, Monmon never joined the crowd. He waited patiently, walked with me to the gate after every shift, and knew exactly where his food and water were, in our car, Pogee. It became our secret routine, like a daily date with a silent suitor.</p>
+      <p>One day, we joked: “If he climbs into the driver’s seat, that means he wants to come home.” And guess what? He did.We hesitated. Juliet, Mikmik, Maku, and Nika were already part of our growing CATropa. But Monmon didn’t just ask to join. He belonged.
+  Jaraaaannnnn! He’s now our Mr. Tabby Cat, our quiet king, and the heart of our crew.</p>
+      <p>Walks you to the gate like a gentleman escort
+  Sniffs your bag like he’s checking for secrets
+  Prefers solo moments over noisy crowds</p>
+         
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_mer1.jpeg" alt="Before Grey" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_mer2.jpeg" alt="Before Grey" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12">Calm eyes with quiet paws and a soft heart.</p>
     </div>
 
+    <h2>Personality & Purr-sonal Life</h2>
+    <p><strong>Personality Vibes:</strong> Monmon is the definition of calm and collected. He’s gentle, observant,
+          and carries himself like a wise old soul, no drama, no fuss, just quiet loyalty and soft stares that say everything.</p>
+    <p><strong>Quirks & Habits:</strong></p>
+        <ul>
+          <li>Walks you to the gate like a gentleman escort</li>
+          <li>Sniffs your bag like he’s checking for secrets</li>
+          <li>Prefers solo moments over noisy crowds</li>
+        </ul>
+    <p><strong>Favorite Activities:</strong></p>
+        <ul>
+          <li>Quiet strolls with his humans</li>
+          <li>Calling out a dramatic “Nyarennn!” when he wants water from the faucet.</li>
+          <li>Napping like nothing ever happened, with zero remorse</li>
+          <li>
+            Launching a full-scale rebellion if dinner is late or the food section is empty</li>
+  <li>Wrecking the sack of cat food</li>
+              <li>Scattering litter like confetti</li>
+              <li>Toppling the trash bin, laundry basket, and anything else in reach</li>
+              <li>Basically transforming into a one-cat disaster squad</li>
+        </ul>
+        <p><strong>Best Friend(s):</strong></p>
+        <p>He’s closest to <b>Juliet</b> who respects his quiet charm and while he’s not one for cat politics, he’s earned the respect of the entire CATropa crew.</p>
+        <a href="#Grey-story" class="view__more close">Hide Story</a>
+    </div>
+  </div>
 
 <!-- Kali Showcase -->
- <section class="cat__showcase" id="kali">
-  <div class="cat__info"> 
-    <h2 class="cat__name">🐾 Kali Corazon</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> Potpot, Putitang, KC</p>
-      <p><strong>Breed:</strong> 	Arabian Mau, Calico</p>
-      <p><strong>Birthday:</strong> July 12, 2020</p>
-      <p><strong>Age:</strong> 	8 years old</p>
-      <p><strong>Eye Color:</strong> Green and Black</p>
-      <p><strong>Fur Color:</strong> Warm brown amber with yellow flecks & black</p>
-      <p><strong>Pattern:</strong> Tortoise Shell</p>
-      <p><strong>Weight:</strong> 2–3 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="kali">
+    <div class="cat__info col-lg-6"> 
+      <h2 class="cat__name">🐾 Kali Corazon</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> Potpot, Putitang, KC</p>
+        <p><strong>Breed:</strong> 	Arabian Mau, Calico</p>
+        <p><strong>Birthday:</strong> July 12, 2020</p>
+        <p><strong>Age:</strong> 	8 years old</p>
+        <p><strong>Eye Color:</strong> Green and Black</p>
+        <p><strong>Fur Color:</strong> Warm brown amber with yellow flecks & black</p>
+        <p><strong>Pattern:</strong> Tortoise Shell</p>
+        <p><strong>Weight:</strong> 2–3 kg</p>
+      </div>
+      <a href="#kali-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#kali-story" class="view__more">View Full Story</a>
-  </div>
-<div class="cat__image">
-    <img src="images/Profile Photos/potp2.jpeg" alt="Kali the Cat">
-  </div>
-</section>
+  <div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/potp2.jpeg" alt="Kali the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
 <!-- Kali's Full Story (hidden until "View More") -->
 <div class="cat__story" id="kali-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">The Fighter Beneath the Fur</p>
-  <p>
-   Just across from our home is Sharjah Coop, where we buy our groceries. That’s where we first met her, a fierce little tortoiseshell cat who ruled the entrance like a queen. She was the only cat living there, she didn’t tolerate intruders. Any stray who dared step into her territory was swiftly chased off. But beneath that tough exterior, she had a soft spot for humans.
-She loved people more than fellow furry creatures. Every night after work, we’d feed her along with the other strays. She never begged or made noise, just waited patiently, always calm, always present.
-Then one day, she was gone. Days passed. Then weeks. No sign of her. We hoped someone with a kind heart had adopted her. But the truth was far more heartbreaking.</p>
-
-    <p>She returned, wounded, limping, with a curved shoulder and a deep, long gash down her back. We didn’t know what had happened, but we knew one thing: she needed help.
-We didn’t hesitate. We took her in, found a vet, and started raising funds to cover her treatment. It was the height of COVID, and vet care in the UAE is expensive. But thanks to generous souls who stepped in, she got the care she needed.</p>
-    
-    <p>Fast forward: we adopted her without a second thought.
-
-After all the pain, the struggle, and the near-death experience she endured, all we wanted was to give her a better life, a safe, loving home where she could finally rest.
-
-Today, she’s healed. We hope her heart and mind are healing, too. She shows us love every day, grateful in ways only a rescued soul can be.
-
-We named her Kali, short for Kalayaan, because we rescued her on June 12, 2020, Philippine Independence Day. She’s our little warrior, our symbol of freedom, and our reminder that love always finds a way.</p>
-       
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_pot1.jpeg" alt="Before Kali">
-    <img src="images/glow_up/before/b_pot2.jpeg" alt="Before Kali">
-    <p class="glowup__caption"><i>"I fought for survival in silence"</i></p>
-  </div>
-
-  <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Kali is a warrior wrapped in fur. Fierce on the outside, tender on the inside. She’s independent, observant, and carries herself with quiet dignity, but once she trusts you, her love is deep, loyal, and full of warmth. She’s the kind of cat who’s survived storms and now guards her peace like a treasure.</p>
-  <p><strong>Quirks & Habits:</strong></p>
-      <ul>
-        <li>Prefers calm environments and soft voices</li>
-        <li>Will gently nudge your hand when she wants affection, but only when she’s ready</li>
-        <li>Has a habit of sitting near you silently, like a quiet protector</li>
-      </ul>
-  <p><strong>Favorite Activities:</strong></p>
-      <ul>
-        <li>Accepting slow, gentle pets with a grateful purr, just avoid the long, hairless scar that tells the story of what she survived</li>
-        <li>Sleeping deeply, as if she’s finally at peace, curled into the softest corners of the home</li>
-        <li>Claiming laps like thrones, if you sit, she’s there, curled up and content, her favorite place in the world, and her quiet way of saying “thank you”</li>
-      </ul>
-      <p><strong>Best Friend(s):</strong></p>
-      <p>Kali respects <b>Juliet</b>. Quiet elegance and keeps a polite distance from the more chaotic members of the CATropa crew. She shares unexpected moments of mischief with <b>Monmon</b>, where they tap each other’s hips like tiny bullies in a slow-motion showdown. It’s not aggression, it’s their own weird little love language.</p>
-      <a href="#Kali-story" class="view__more close">Hide Story</a>
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">The Fighter Beneath the Fur</p>
+    <p>
+     Just across from our home is Sharjah Coop, where we buy our groceries. That’s where we first met her, a fierce little tortoiseshell cat who ruled the entrance like a queen. She was the only cat living there, she didn’t tolerate intruders. Any stray who dared step into her territory was swiftly chased off. But beneath that tough exterior, she had a soft spot for humans.
+  She loved people more than fellow furry creatures. Every night after work, we’d feed her along with the other strays. She never begged or made noise, just waited patiently, always calm, always present.
+  Then one day, she was gone. Days passed. Then weeks. No sign of her. We hoped someone with a kind heart had adopted her. But the truth was far more heartbreaking.</p>
+  
+      <p>She returned, wounded, limping, with a curved shoulder and a deep, long gash down her back. We didn’t know what had happened, but we knew one thing: she needed help.
+  We didn’t hesitate. We took her in, found a vet, and started raising funds to cover her treatment. It was the height of COVID, and vet care in the UAE is expensive. But thanks to generous souls who stepped in, she got the care she needed.</p>
+      
+      <p>Fast forward: we adopted her without a second thought.
+  After all the pain, the struggle, and the near-death experience she endured, all we wanted was to give her a better life, a safe, loving home where she could finally rest.
+  Today, she’s healed. We hope her heart and mind are healing, too. She shows us love every day, grateful in ways only a rescued soul can be.
+  We named her Kali, short for Kalayaan, because we rescued her on June 12, 2020, Philippine Independence Day. She’s our little warrior, our symbol of freedom, and our reminder that love always finds a way.</p>
+         
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_pot1.jpeg" alt="Before Kali" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-6">
+        <img src="images/glow_up/before/b_pot2.jpeg" alt="Before Kali" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12"><i>"I fought for survival in silence"</i></p>
     </div>
+
+    <h2>Personality & Purr-sonal Life</h2>
+    <p><strong>Personality Vibes:</strong> Kali is a warrior wrapped in fur. Fierce on the outside, tender on the inside. She’s independent, observant, and carries herself with quiet dignity, but once she trusts you, her love is deep, loyal, and full of warmth. She’s the kind of cat who’s survived storms and now guards her peace like a treasure.</p>
+    <p><strong>Quirks & Habits:</strong></p>
+        <ul>
+          <li>Prefers calm environments and soft voices</li>
+          <li>Will gently nudge your hand when she wants affection, but only when she’s ready</li>
+          <li>Has a habit of sitting near you silently, like a quiet protector</li>
+        </ul>
+    <p><strong>Favorite Activities:</strong></p>
+        <ul>
+          <li>Accepting slow, gentle pets with a grateful purr, just avoid the long, hairless scar that tells the story of what she survived</li>
+          <li>Sleeping deeply, as if she’s finally at peace, curled into the softest corners of the home</li>
+          <li>Claiming laps like thrones, if you sit, she’s there, curled up and content, her favorite place in the world, and her quiet way of saying “thank you”</li>
+        </ul>
+        <p><strong>Best Friend(s):</strong></p>
+        <p>Kali respects <b>Juliet</b>. Quiet elegance and keeps a polite distance from the more chaotic members of the CATropa crew. She shares unexpected moments of mischief with <b>Monmon</b>, where they tap each other’s hips like tiny bullies in a slow-motion showdown. It’s not aggression, it’s their own weird little love language.</p>
+        <a href="#Kali-story" class="view__more close">Hide Story</a>
+    </div>
+  </div>
  
 <!-- Max Ruru Showcase -->
-<section class="cat__showcase" id="max">
-  <div class="cat__info">
-    <h2 class="cat__name">🐾 Max Ruru</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> Xchangchang, Maxmax</p>
-      <p><strong>Breed:</strong> Arabian Mau</p>
-      <p><strong>Birthday:</strong> Nov 4, 2021</p>
-      <p><strong>Age:</strong> 	4 years old</p>
-      <p><strong>Eye Color:</strong> Yellow-green</p>
-      <p><strong>Fur Color:</strong> Two tone Black & White</p>
-      <p><strong>Pattern:</strong> Solid</p>
-      <p><strong>Weight:</strong> 7.5 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="max">
+    <div class="cat__info col-lg-6">
+      <h2 class="cat__name">🐾 Max Ruru</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> Xchangchang, Maxmax</p>
+        <p><strong>Breed:</strong> Arabian Mau</p>
+        <p><strong>Birthday:</strong> Nov 4, 2021</p>
+        <p><strong>Age:</strong> 	4 years old</p>
+        <p><strong>Eye Color:</strong> Yellow-green</p>
+        <p><strong>Fur Color:</strong> Two tone Black & White</p>
+        <p><strong>Pattern:</strong> Solid</p>
+        <p><strong>Weight:</strong> 7.5 kg</p>
+      </div>
+      <a href="#max-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#max-story" class="view__more">View Full Story</a>
-  </div>
 
-<div class="cat__image">
-    <img src="images/Profile Photos/maxp1.JPG" alt="Max the Cat">
-  </div>
-</section>
+  <div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/maxp1.JPG" alt="Max the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
 <!-- Max's Full Story (hidden until "View More") -->
 <div class="cat__story" id="max-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">The Leaf-Loving Gentleman Nobody Understoods</p>
-  <p>
-    Down by the sand parking near our building, Happy Home, Sharjah, lived a tiny black-and-white cat we called Max Ruru. Two-toned, wide-eyed, and always alone. While other strays chased each other or begged for food, Max spent his days quietly playing with dry leaves and bits of plastic like they were prized possessions. He had a whole playground to himself… but no playmates.
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">The Leaf-Loving Gentleman Nobody Understoods</p>
+    <p>
+      Down by the sand parking near our building, Happy Home, Sharjah, lived a tiny black-and-white cat we called Max Ruru. Two-toned, wide-eyed, and always alone. While other strays chased each other or begged for food, Max spent his days quietly playing with dry leaves and bits of plastic like they were prized possessions. He had a whole playground to himself… but no playmates.
+  We used to wonder: "Why doesn’t anyone want to play with Max? He wasn’t aggressive. He wasn’t loud. He was just… different.
+  One day, a friend of ours was looking to adopt a cat. We immediately thought of Max. He was cute, handsome, and clearly in need of companionship. So we scooped him up and gave him his first taste of a furrever home. Everything was perfect, until it wasn’t.
+  Turns out, both of our friends’ daughters had cat allergies. Heartbroken, they had to return Max. And suddenly, we were faced with a dilemma. We already had six cats, Juliet, Mikmik, Maku, Nika, Mermer, and Potpot, and we weren’t sure we could handle one more. We worried about space, care, medication, and whether we could give him the love he truly deserved.</p>
+      <p>But Max had already chosen us. And honestly? We couldn’t say no.
+  Fast forward four years: that tiny leaf-playing boy is now a full-grown gentleman, still a little misunderstood, but deeply loved. We’ve noticed something special about him. Other cats tend to avoid him, and we’re not entirely sure why. The vet suspects he may have special needs, or maybe it’s just his white fur that makes him seem like a threat to the others. Whatever the reason, Max has always been a bit of an outsider in the CATropa crew.
+  But to us? He’s soft as cotton, warm as a blanket, and full of quiet love that only we truly understand.</p>
+      <p>His mortal enemies? <b>Nika</b> and <b>Maku</b>. There’s tension. There’s drama. There’s the occasional side-eye across the room. But we’re holding out hope that one day, a miracle will happen, and they’ll all share a sunbeam in peace.</p>
+         
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_max1.jpeg" alt="Before Max" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_max2.jpeg" alt="Before Max" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_max3.jpeg" alt="Before Max" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12">Just a tiny man in a sandlot, playing with leaves, plastics, and dreaming of love.</p>
+    </div>
 
-We used to wonder: "Why doesn’t anyone want to play with Max? He wasn’t aggressive. He wasn’t loud. He was just… different.
-
-One day, a friend of ours was looking to adopt a cat. We immediately thought of Max. He was cute, handsome, and clearly in need of companionship. So we scooped him up and gave him his first taste of a furrever home. Everything was perfect, until it wasn’t.
-
-Turns out, both of our friends’ daughters had cat allergies. Heartbroken, they had to return Max. And suddenly, we were faced with a dilemma. We already had six cats, Juliet, Mikmik, Maku, Nika, Mermer, and Potpot, and we weren’t sure we could handle one more. We worried about space, care, medication, and whether we could give him the love he truly deserved.</p>
-
-
-    <p>But Max had already chosen us. And honestly? We couldn’t say no.
-
-Fast forward four years: that tiny leaf-playing boy is now a full-grown gentleman, still a little misunderstood, but deeply loved. We’ve noticed something special about him. Other cats tend to avoid him, and we’re not entirely sure why. The vet suspects he may have special needs, or maybe it’s just his white fur that makes him seem like a threat to the others. Whatever the reason, Max has always been a bit of an outsider in the CATropa crew.
-
-But to us? He’s soft as cotton, warm as a blanket, and full of quiet love that only we truly understand.</p>
-
-
-    <p>His mortal enemies? <b>Nika</b> and <b>Maku</b>. There’s tension. There’s drama. There’s the occasional side-eye across the room. But we’re holding out hope that one day, a miracle will happen, and they’ll all share a sunbeam in peace.</p>
-       
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_max1.jpeg" alt="Before Max">
-    <img src="images/glow_up/before/b_max2.jpeg" alt="Before Max">
-    <img src="images/glow_up/before/b_max3.jpeg" alt="Before Max">
-    <p class="glowup__caption">Just a tiny man in a sandlot, playing with leaves, plastics, and dreaming of love.</p>
-  </div>
-
-  <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Max is gentle, sensitive, and emotionally fluent. He’s the quiet poet of the CATropa crew, soft-spoken, observant, and always a little misunderstood. He doesn’t need the spotlight; he just wants a leaf and a little love.</p>
-  <p><strong>Quirks & Habits:</strong></p>
-      <ul>
-        <li>Plays with leaves and plastic like they’re rare collectibles</li>
-        <li>Stares into space like he’s composing a sonnet</li>
-        <li>Avoids drama but somehow ends up in the middle of it</li>
-	<li>Has a slow blink that says, “I see your soul, and I approve.”</li>
-      </ul>
-  <p><strong>Favorite Activities:</strong></p>
-      <ul>
-        <li>Sleeping in hidden corners like a secret agent on break</li>
-        <li>Accepting gentle head rubs from trusted humans only</li>
-        <li>Being adored by people and side-eyed by cats</li>
-        <li>Occasionally, instigating a silent feud with Nika and Maku</li>
-            <li>Collecting emotional baggage and dry leaves with equal passion</li>
-      </ul>
-      <p><strong>Best Friend(s):</strong></p>
-      <p>Max has a bestie and it's <b>Sensei</b> who's also quiet, respectful vibes, who minds his own business and lets Max be Max. His relationship with <b>Maku</b> and <b>Nika</b> is best described as telenovela-worthy.</p>
-      <a href="#Max-story" class="view__more close">Hide Story</a>
+    <h2>Personality & Purr-sonal Life</h2>
+    <p><strong>Personality Vibes:</strong> Max is gentle, sensitive, and emotionally fluent. He’s the quiet poet of the CATropa crew, soft-spoken, observant, and always a little misunderstood. He doesn’t need the spotlight; he just wants a leaf and a little love.</p>
+    <p><strong>Quirks & Habits:</strong></p>
+        <ul>
+          <li>Plays with leaves and plastic like they’re rare collectibles</li>
+          <li>Stares into space like he’s composing a sonnet</li>
+          <li>Avoids drama but somehow ends up in the middle of it</li>
+    <li>Has a slow blink that says, “I see your soul, and I approve.”</li>
+        </ul>
+    <p><strong>Favorite Activities:</strong></p>
+        <ul>
+          <li>Sleeping in hidden corners like a secret agent on break</li>
+          <li>Accepting gentle head rubs from trusted humans only</li>
+          <li>Being adored by people and side-eyed by cats</li>
+          <li>Occasionally, instigating a silent feud with Nika and Maku</li>
+              <li>Collecting emotional baggage and dry leaves with equal passion</li>
+        </ul>
+        <p><strong>Best Friend(s):</strong></p>
+        <p>Max has a bestie and it's <b>Sensei</b> who's also quiet, respectful vibes, who minds his own business and lets Max be Max. His relationship with <b>Maku</b> and <b>Nika</b> is best described as telenovela-worthy.</p>
+        <a href="#Max-story" class="view__more close">Hide Story</a>
+     </div>
    </div>
 
- 
 <!-- Sensie Showcase -->
-<section class="cat__showcase" id="sensei">
-  <div class="cat__info">
-    <h2 class="cat__name">🐾 Sensei</h2>
-    <div class="cat__details">
-      <p><strong>Nickname(s):</strong> Tsensei, Tsentsen</p>
-      <p><strong>Breed:</strong> Arabian Mau</p>
-      <p><strong>Birthday:</strong> October 25, 2023</p>
-      <p><strong>Age:</strong> 	2 years old</p>
-      <p><strong>Eye Color:</strong> Yellow, Almond</p>
-      <p><strong>Fur Color:</strong> White with Yellow & Black</p>
-      <p><strong>Pattern:</strong> Solid with Mickey Mouse mark</p>
-      <p><strong>Weight:</strong> 	4.3 kg</p>
+<div class="container my-5">
+  <section class="cat__showcase row align-items-center" id="sensei">
+    <div class="cat__info col-lg-6">
+      <h2 class="cat__name">🐾 Sensei</h2>
+      <div class="cat__details">
+        <p><strong>Nickname(s):</strong> Tsensei, Tsentsen</p>
+        <p><strong>Breed:</strong> Arabian Mau</p>
+        <p><strong>Birthday:</strong> October 25, 2023</p>
+        <p><strong>Age:</strong> 	2 years old</p>
+        <p><strong>Eye Color:</strong> Yellow, Almond</p>
+        <p><strong>Fur Color:</strong> White with Yellow & Black</p>
+        <p><strong>Pattern:</strong> Solid with Mickey Mouse mark</p>
+        <p><strong>Weight:</strong> 	4.3 kg</p>
+      </div>
+      <a href="#sensei-story" class="view__more">View Full Story</a>
     </div>
-    <a href="#sensei-story" class="view__more">View Full Story</a>
-  </div>
 
-<div class="cat__image">
-    <img src="images/Profile Photos/senseip1.jpeg" alt="Sensei the Cat">
-  </div>
-</section>
+  <div class="cat__image col-lg-6 text-center">
+      <img src="images/Profile Photos/senseip1.jpeg" alt="Sensei the Cat" class="img-fluid rounded-3">
+    </div>
+  </section>
+</div>
 
 <!-- Sensei's Full Story (hidden until "View More") -->
 <div class="cat__story" id="sensei-story">
-  <h2>Adoption / Rescue Tale</h2>
-  <p class="cat__tagline">The Wounded Wanderer with a Mickey Mouse Mark</p>
-  <p>
-    At first, we thought he was just another stray asking for food, like so many others who find their way to us. We met him near our home, at the ADNOC petrol station, where we regularly fed the local crew of street cats. He approached quietly, no meows, no fuss. Just a slow walk and a tired stare.
-
-But then we saw it.
-
-His legs were wrapped in a makeshift bandage, and there was a deep, raw cut on his thigh. This wasn’t a cat asking for food, this was a cat asking for help. We rushed him to the vet. The doctor believed he’d been run over, treated briefly, and then dumped back on the street to “heal” on his own. No one knew how long he’d been like that, days, maybe weeks. His wound was badly infected, full of maggots, and so deep you could almost see the bone.</p>
-
-
-    <p>We didn’t hesitate. We took him in, determined to help him heal. But it wasn’t easy. The CATropa crew didn’t welcome him. He was white, with patches of black and yellow, and somehow they saw him as a threat. Maybe it was his scent, his energy, maybe just the trauma he carried. His wound refused to heal quickly. Alongside antibiotics, we used Manuka honey, a natural remedy with healing powers, to help close the wound. It took over a year before it fully healed. And another year before he could walk and play properly again.
-
-But through it all, one cat stood by him: Max Ruru.
-
-Max, our quiet leaf collector, saw something in Sensei. Maybe it was the loneliness. Maybe it was the pain. Maybe it was just fate. Max loved him like a best friend. And honestly? Max convinced us to keep him. He needed a companion, and Sensei had already stolen our hearts.</p>
-
-
-    <p>We named him Sensei because he taught us patience, resilience, and the quiet strength of survival.
-
-Oh, and the best part? He has a marking on his body shaped like Mickey Mouse. When we first saw him, we joked that he looked like a mouse, tiny, fragile, and oddly adorable. But now? He’s soft, kind, and silky smooth. A survivor with a shiny coat and a heart full of gratitude.
-
-Sensei didn’t just heal. He became family.</p>
-       
-  <h2>Paws for Hope</h2>
-  <div class="glow__up">
-    <img src="images/glow_up/before/b_sensei1.jpeg" alt="Before Sensei">
-    <img src="images/glow_up/before/b_sensei2.jpeg" alt="Before Sensei">
-    <img src="images/glow_up/before/b_sensei3.png" alt="Before Sensei">
-    <p class="glowup__caption">"I looked like a mouse, limped like a warrior, and smelled like antibiotics."</p>
-  </div>
-
-  <h2>Personality & Purr-sonal Life</h2>
-  <p><strong>Personality Vibes:</strong> Sensei carries the calm energy of a seasoned warrior. He’s gentle yet strong, scarred yet graceful. Every step shows resilience, and every look holds a quiet wisdom. He may wobble a little, but it feels like part of his story, not a weakness.</p>
-  <p><strong>Quirks & Habits:</strong></p>
-      <ul>
-        <li>Walks with a slight wobble, like a warrior who’s earned every scar</li>
-        <li>Has a Mickey Mouse-shaped mark on his body, yes, really!</li>
-        <li>Loves soft blankets and warm corners, especially ones that smell like Max</li>
-	<li>Will stare at you like he’s reading your aura, then blink slowly in approval”</li>
-	<li>Occasionally, he stretches his wounded leg like a gymnast</li>
-      </ul>
-  <p><strong>Favorite Activities:</strong></p>
-      <ul>
-        <li>Stealing itlog na pula like it’s a heist mission, no salted egg is safe when Sensei’s around</li>
-        <li>Playing mouse-fetch like a ninja (he runs, fetches, and returns with silent pride)</li>
-        <li>Cuddling in secret, he only snuggles when no one’s watching, like it’s a top-secret operation</li>
-        <li>Napping beside Max, his emotional support bestie and cuddle co-conspirator</li>
-            <li>Accepting gentle rubs on his silky-soft fur (but never near the old wound, he’s got boundaries)</li>
-      </ul>
-      <p><strong>Best Friend(s):</strong></p>
-      <p>His soulmate in the crew is <b>Max Ruru</b> the only one who saw him and said, “He’s one of us.” They share a quiet bond, like two old souls who don’t need words.</p>
-      <a href="#Sensei-story" class="view__more close">Hide Story</a>
+  <div class="container my-5">
+    <h2>Adoption / Rescue Tale</h2>
+    <p class="cat__tagline">The Wounded Wanderer with a Mickey Mouse Mark</p>
+    <p>
+      At first, we thought he was just another stray asking for food, like so many others who find their way to us. We met him near our home, at the ADNOC petrol station, where we regularly fed the local crew of street cats. He approached quietly, no meows, no fuss. Just a slow walk and a tired stare.
+  But then we saw it.
+  His legs were wrapped in a makeshift bandage, and there was a deep, raw cut on his thigh. This wasn’t a cat asking for food, this was a cat asking for help. We rushed him to the vet. The doctor believed he’d been run over, treated briefly, and then dumped back on the street to “heal” on his own. No one knew how long he’d been like that, days, maybe weeks. His wound was badly infected, full of maggots, and so deep you could almost see the bone.</p>
+      <p>We didn’t hesitate. We took him in, determined to help him heal. But it wasn’t easy. The CATropa crew didn’t welcome him. He was white, with patches of black and yellow, and somehow they saw him as a threat. Maybe it was his scent, his energy, maybe just the trauma he carried. His wound refused to heal quickly. Alongside antibiotics, we used Manuka honey, a natural remedy with healing powers, to help close the wound. It took over a year before it fully healed. And another year before he could walk and play properly again.
+  But through it all, one cat stood by him: Max Ruru.
+  Max, our quiet leaf collector, saw something in Sensei. Maybe it was the loneliness. Maybe it was the pain. Maybe it was just fate. Max loved him like a best friend. And honestly? Max convinced us to keep him. He needed a companion, and Sensei had already stolen our hearts.</p>
+      <p>We named him Sensei because he taught us patience, resilience, and the quiet strength of survival.
+  Oh, and the best part? He has a marking on his body shaped like Mickey Mouse. When we first saw him, we joked that he looked like a mouse, tiny, fragile, and oddly adorable. But now? He’s soft, kind, and silky smooth. A survivor with a shiny coat and a heart full of gratitude.
+  Sensei didn’t just heal. He became family.</p>
+         
+    <h2>Paws for Hope</h2>
+    <div class="glow__up row text-center">
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_sensei1.jpeg" alt="Before Sensei" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_sensei2.jpeg" alt="Before Sensei" class="img-fluid rounded-3 mb-2">
+      </div>
+      <div class="col-md-4">
+        <img src="images/glow_up/before/b_sensei3.png" alt="Before Sensei" class="img-fluid rounded-3 mb-2">
+      </div>
+      <p class="glowup__caption col-12">"I looked like a mouse, limped like a warrior, and smelled like antibiotics."</p>
     </div>
+
+    <h2>Personality & Purr-sonal Life</h2>
+    <p><strong>Personality Vibes:</strong> Sensei carries the calm energy of a seasoned warrior. He’s gentle yet strong, scarred yet graceful. Every step shows resilience, and every look holds a quiet wisdom. He may wobble a little, but it feels like part of his story, not a weakness.</p>
+    <p><strong>Quirks & Habits:</strong></p>
+        <ul>
+          <li>Walks with a slight wobble, like a warrior who’s earned every scar</li>
+          <li>Has a Mickey Mouse-shaped mark on his body, yes, really!</li>
+          <li>Loves soft blankets and warm corners, especially ones that smell like Max</li>
+    <li>Will stare at you like he’s reading your aura, then blink slowly in approval”</li>
+    <li>Occasionally, he stretches his wounded leg like a gymnast</li>
+        </ul>
+    <p><strong>Favorite Activities:</strong></p>
+        <ul>
+          <li>Stealing itlog na pula like it’s a heist mission, no salted egg is safe when Sensei’s around</li>
+          <li>Playing mouse-fetch like a ninja (he runs, fetches, and returns with silent pride)</li>
+          <li>Cuddling in secret, he only snuggles when no one’s watching, like it’s a top-secret operation</li>
+          <li>Napping beside Max, his emotional support bestie and cuddle co-conspirator</li>
+              <li>Accepting gentle rubs on his silky-soft fur (but never near the old wound, he’s got boundaries)</li>
+        </ul>
+        <p><strong>Best Friend(s):</strong></p>
+        <p>His soulmate in the crew is <b>Max Ruru</b> the only one who saw him and said, “He’s one of us.” They share a quiet bond, like two old souls who don’t need words.</p>
+        <a href="#Sensei-story" class="view__more close">Hide Story</a>
+    </div>
+  </div>
+</section>
 
     <!-- Moments & Whiskers -->
     <section id="moments" class="moments-section">
@@ -751,9 +789,18 @@ Sensei didn’t just heal. He became family.</p>
 
 <div class="story-modal" id="storyModal">
   <div class="story-modal__content">
-    <span class="story-modal__close-btn" id="closeModalBtn">&times;</span>
+    <span 
+      class="story-modal__close-btn" 
+      id="closeModalBtn" 
+      role="button" 
+      tabindex="0" 
+      aria-label="Close modal window"
+    >&times;</span>
+    
     <h3>Share Your Cat's Story!</h3>
-    <form class="story-form">
+    
+    <form class="story-form" id="story-form">
+      
       <label for="userName">Your Name:</label>
       <input type="text" id="userName" name="userName" required>
 
@@ -765,14 +812,16 @@ Sensei didn’t just heal. He became family.</p>
 
       <label for="catImage">Upload a Photo:</label>
       <input type="file" id="catImage" name="catImage" accept="image/*">
-      
-      <button type="submit" class="button button--primary">Submit Story</button>
+
+      <div id="story-error-message" style="color: red; display: none; margin-bottom: 1rem; font-weight: bold;"></div>
+      <button type="submit" class="button button--primary" id="storySubmitBtn">Submit Story</button>
     </form>
   </div>
 </div>
 
     <!-- Pet Care Tips -->
     <section id="tips" class="tips-section">
+    <div class="container my-5">
   <h2 class="tips-section__title">Pet Care Tips for a Happy, Healthy Crew 💕</h2>
   <p class="tips-section__intro">Whether you're welcoming a new whiskered friend or deepening your bond with a longtime companion, these tips help keep your feline family thriving.</p>
    <div class="accordion">
@@ -938,5 +987,6 @@ Sensei didn’t just heal. He became family.</p>
 <script src="scripts/backbutton.js"></script>
 <script src="scripts/petcare.js"></script>
 <script src="scripts/storysubmission.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
