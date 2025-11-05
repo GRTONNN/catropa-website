@@ -64,7 +64,9 @@ Our team followed this workflow:
 3.  **Styling:** Marjorie wrote the custom `style.css` for the design, colors, and fonts.
 4.  **JavaScript:** Anton added interactivity for the modal, accordion, and buttons.
 5.  **Refactoring (Week 8):** We worked together to integrate Bootstrap and refactor the navbar and layout to be responsive per project feedback.
-
+6.  **Internal Quality Assurance (Week 9):** The team conducted internal testing. We systematically executed our Test Case Document, verified functionality against expected outputs, and resolved any minor bugs or UI discrepancies we discovered ourselves.
+7.  **External Peer Testing (Week 10 - Current):** This is our current focus. We exchanged our website with our partner group for external peer review.
+   
 ### ✅ Feature Status
 
 This tracks the current status of all major features.
