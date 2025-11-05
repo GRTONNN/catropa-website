@@ -73,9 +73,8 @@ This tracks the current status of all major features.
 * [x] **Pet Care Accordion:** The pet care tips section works.
 * [x] **Story Modal:** The "Submit Story" modal opens and closes.
 * [x] **Back-to-Top Button:** The button appears and functions.
-* [ ] **Community & Stories:** Section is built (or: "Needs final content").
-* [ ] **Did You Know?:** Section is built (or: "Needs final content").
-
+* [x] **Community & Stories:** Section is built
+* [x] **Did You Know?:** Section is built
 ### 💡 Future Enhancements
 
 If we had more time, our next steps would be:
